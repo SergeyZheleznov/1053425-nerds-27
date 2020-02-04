@@ -76,31 +76,34 @@
     </footer>
 
     <section>
-      <form class="letter" method="get"
-      action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <legend> Напишите нам</legend>
+      <form class="letter" method="post" action="https://echo.htmlacademy.ru">
+      <h2> Напишите нам</h2>
         <ul>
           <li>
             <label for="your-name">Ваше имя:</label>
-            <input class="letter-name" 
-            type="text" placeholder="Имя Фамилия"
+            <input class="letter-name" type="text" placeholder="Имя Фамилия"
             id="your-name" name="your-name-send">
           </li>
           <li>
             <label for="your-email">Ваш e-mail:</label>
-            <input class="letter-email" 
-            type="text" placeholder="email@example.com"
+            <input class="letter-email" type="text" placeholder="email@example.com"
             id="your-email" name="your-name-send">
           </li>
           <li>
-            <label for="letter-text">Текст письма</label>
-            <input class="letter-text" 
-            type="text" placeholder="email@example.com"
-            id="letter-text" name="your-letter-text">
+            <label for="letter">Текст письма:</label>
+            <textarea id="letter" name="name-letter"
+            rows="5" cols="33">
+            В свободной форме
+            </textarea>
           </li>
         </ul>
-      </fieldset>    
+        <button type="submit" class="letter-submit button">
+          Отправить
+        </button>
+      <form>  
+        <button type="button" class="letter-button button">
+          Закрыть
+        </button>
      </section>
   </body>
 </html>

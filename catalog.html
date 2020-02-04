@@ -22,22 +22,104 @@
 
     <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-        <section class="filter">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-            <p><b>СЕТКА:</b></p>
-            <p><input name="setka" type="radio" value="adapted"> Адаптивная</p>
-            <p><input name="setka" type="radio" value="fixes"> Фиксированная</p>
-            <p><input name="setka" type="radio" value="rubber" checked> Резиновая</p>
-        
-            <p><b>ОСОБЕННОСТИ:</b></p>
-            <p><input type="checkbox" name="a" value="Slider" checked> Слайдер</p>
-            <p><input type="checkbox" name="a" value="Block"> Блок преимуществ</p>
-            <p><input type="checkbox" name="a" value="News" checked> Новости</p>
-            <p><input type="checkbox" name="a" value="Galary"> Галерея</p>
-            <p><input type="checkbox" name="a" value="cart"> Корзина</p>
-            <p><input type="submit" value="Показать"> 
-              <b>Показать</b>
-            </p>
+          <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filters" method="get"
+              action="https://echo.htmlacademy
+              .ru">
+              <fieldset>
+                <legend> сетка</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-radio" 
+                    type="radio" name
+                    ="net"
+                    id="filter-adapted"
+                    checked>
+                    <label for="filter-adapted">
+                      Адаптивная
+                    </label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-radio" 
+                    type="radio" id="filter-fixed" name
+                    ="net">
+                    <label for="filter-fixed">
+                      Фиксированная
+                    </label>   
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-radio" 
+                    type="radio" name
+                    ="net" id="filter-rubber">
+                    <label for="filter-rubber">
+                      Резиновая
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            
+              <fieldset>
+                <legend>Особенности:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-checkbox" 
+                    type="checkbox" name="slider"
+                    value="slider" id="filter-slider">
+                    <label for="filter-slider" checked>
+                    Слайдер</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-checkbox" type="checkbox"
+                    name="advanteges" value="advantages" 
+                    id="filter-advanteges">
+                    <label for="filter-advanteges">
+                      Блок преимуществ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-checkbox" type="checkbox"
+                    name="news" value="news"
+                    id="filter-news" checked>
+                    <label for="filter-news">
+                    Новости</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-checkbox" type="checkbox"
+                    name="gallery" value="gallery" 
+                    id="filter-gallery">
+                    <label for="filter-gallery">
+                      Блок преимуществ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually
+                    -hidden filter-input
+                    filter-input-checkbox" type="checkbox"
+                    name="cart" value="cart"
+                    id="filter-cart">
+                    <label for="filter-cart">
+                    Корзина</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class=
+                "filter-button button">
+                Показать
+              </button>
+            </form>
           </section>
         <section class="catalog-list">
           <h2 class="visuallity-hidden">Карточки товаров</h2>
@@ -103,9 +185,9 @@
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="vk-icon.svg"> Вконтакте</a></li>
-          <li><a class="social-button" href="fb-icon.svg"> Фейсбук</a></li>
-          <li><a class="social-button" href="insta-icon.svg"> Инстаграм</a></li>
+          <li><a class="social-button" href="#"> Вконтакте</a></li>
+          <li><a class="social-button" href="#"> Фейсбук</a></li>
+          <li><a class="social-button" href="#"> Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-slogan">
@@ -113,6 +195,34 @@
         <b> Скидка 10% для друзей из социальных сетей</b>
       </p>
     </footer>
+    
+     <section>
+      <form class="letter" method="get"
+      action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend> Напишите нам</legend>
+        <ul>
+          <li>
+            <label for="your-name">Ваше имя:</label>
+            <input class="letter-name" 
+            type="text" placeholder="Имя Фамилия"
+            id="your-name" name="your-name-send">
+          </li>
+          <li>
+            <label for="your-email">Ваш e-mail:</label>
+            <input class="letter-email" 
+            type="text" placeholder="email@example.com"
+            id="your-email" name="your-name-send">
+          </li>
+          <li>
+            <label for="letter-text">Текст письма</label>
+            <input class="letter-text" 
+            type="text" placeholder="email@example.com"
+            id="letter-text" name="your-letter-text">
+          </li>
+        </ul>
+      </fieldset>    
+     </section>
   </body>
 </html>
   

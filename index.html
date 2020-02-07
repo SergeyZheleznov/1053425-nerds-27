@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=PX
+    +Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,7 +30,7 @@
           <h2 class="visually-hidden">Список программных продуктов веб-студии</h2>
             <ul>        
               <li class="catalog-item">
-                <div>
+                <div class="catalog-content">
                   <img src="img/advantage-picture-red.jpg" width="300" height="146" 
                   alt="Веб-сайты">
                 </div>
@@ -34,20 +38,20 @@
                 <p>Мир никогда не будет прежним
                 после того, как увидит Ваш сайт! 
                 </p>
-                <a class="button" href="#">Заказать</a>
+                <a class="button-red button" href="#">Заказать</a>
               </li>
               <li class="catalog-item">
-                <div>
+                <div class="catalog-content">
                   <img src="img/advantage-picture-green.jpg" width="300" height="146" 
                   alt="Приложения">
                 </div>
                 <h3>Приложения</h3>  
-                <p>Получите ещё 15 приложений
-                   в AppleStore и Google Play 
+                <p>Покорите топ-10 приложений в
+                   AppleStore и Google Play 
                 </p>
-                <a class="button" href="#">Заказать</a>
+                <a class="button-green button" href="#">Заказать</a>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item" class="catalog-content">
                 <div>
                   <img src="img/advantage-picture-yellow.jpg" width="300" height="146" 
                   alt="Презентации">
@@ -56,11 +60,10 @@
                 <p>Вы даже не представляете,
                 насколько вы изумительны! 
                 </p>
-                <a class="button" href="#">Заказать</a>
+                <a class="button-yellow button" href="#">Заказать</a>
               </li>
-            </ul>
-        </section>
-    </main>
+            </ul>   
+           </main>
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
@@ -69,16 +72,16 @@
           <li><a class="social-button" href="#"> Инстаграм</a></li>
         </ul>
       </div>
-      <p class="footer-slogan">
-        <b> Давай дружить, это выгодно!</b> 
-        <b> Скидка 10% для друзей из социальных сетей</b>
-      </p>
+      <p class="footer-slogan"> Давай дружить, это выгодно!</p> 
+      <p class="footer-sales"></p> Скидка 10% для друзей из социальных сетей</b>
+      
     </footer>
 
-    <section>
+    <section class="modal modal-letter">
+      <div class="box-moder-letter">
       <form class="letter" method="post" action="https://echo.htmlacademy.ru">
       <h2> Напишите нам</h2>
-        <ul>
+        <ul class="letter-list">
           <li>
             <label for="your-name">Ваше имя:</label>
             <input class="letter-name" type="text" placeholder="Имя Фамилия"
@@ -91,7 +94,7 @@
           </li>
           <li>
             <label for="letter">Текст письма:</label>
-            <textarea id="letter" name="name-letter"
+            <textarea class="letter-text" id="letter" name="name-letter"
             rows="5" cols="33">
             В свободной форме
             </textarea>
@@ -101,9 +104,11 @@
           Отправить
         </button>
       <form>  
+      
         <button type="button" class="letter-button button">
           Закрыть
         </button>
+      </div>
      </section>
   </body>
 </html>

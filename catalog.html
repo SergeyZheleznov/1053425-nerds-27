@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=PX
-    +Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,8 +13,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65"
-          alt="логотип проекта «Нёрдс»">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип проекта «Нёрдс»">
         </a> 
         <ul class="site-navigation">                    
           <li> <a href="#">Студия</a></li>
@@ -24,7 +22,6 @@
           <li> <a href="#">корзина</a></li>
         </ul>
       </nav>
-      
     </header>
 
     <main class="container">
@@ -32,135 +29,106 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1> 
       </div>
       <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="filters" method="get"
-              action="https://echo.htmlacademy.ru">
-              
-              <fieldset>
-                <legend>Сетка:</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" 
-                    type="radio" name="net" id="filter-adapted" value="value-net" checked>
-                    <label for="filter-adapted">
-                      Адаптивная
-                    </label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" 
-                    type="radio"name="net" id="filter-fixed"  value="value-fixed">
-                    <label for="filter-fixed">
-                      Фиксированная
-                    </label>   
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" 
-                    type="radio" name="net" id="filter-rubber" value="value-rubber">
-                    <label for="filter-rubber">
-                      Резиновая
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Сетка:</legend>
+            <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="filter-adapted" value="value-net" checked>
+              <label for="filter-adapted">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio"name="net" id="filter-fixed"  value="value-fixed">
+              <label for="filter-fixed">Фиксированная</label>   
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="filter-rubber" value="value-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
             
-              <fieldset>
-                <legend>Особенности:</h2></legend>
-                <ul>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" 
-                    type="checkbox" name="features" value="slider" id="filter-slider" checked>
-                    <label for="filter-slider">
-                    Слайдер</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                    name="features" value="advantages" id="filter-advanteges">
-                    <label for="filter-advanteges">
-                      Блок преимуществ</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox"
-                    type="checkbox" name="features" value="news" id="filter-news" checked>
-                    <label for="filter-news">
-                    Новости</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox"
-                    type="checkbox" name="features" value="gallery" id="filter-gallery">
-                    <label for="filter-gallery">
-                      Блок преимуществ</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" 
-                    type="checkbox" name="features" value="cart" id="filter-cart">
-                    <label for="filter-cart">
-                    Корзина</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button type="submit" class="filter-button button">
-                Показать
-              </button>
-            </form>
-          </section>
-        <section class="catalog-list">
-          <h2 class="visuallity-hidden">Карточки товаров</h2>
-            <ul> 
-              <li class="catalog-item">
-                <img src="img/img-sedona-jpg.jpg" width="360" height="576" 
-                  alt="Главная страница сайта туристической фирмы">
+        <fieldset>
+          <legend>Особенности:</h2></legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" value="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" value="advantages" id="filter-advanteges">
+                <label for="filter-advanteges">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" value="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" value="gallery" id="filter-gallery">
+                <label for="filter-gallery">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" value="cart" id="filter-cart">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+        </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
+      </section>
+      <section class="catalog-list">
+        <h2 class="visuallity-hidden">Карточки товаров</h2>
+          <ul> 
+            <li class="catalog-item">
+              <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Главная страница сайта туристической фирмы">
                 <div>
                    <a href="#"><h3>Sedona</h3></a>
                    <p>Информационный сайт для туристов</p>
                    <span>9900 руб.</span>
                 </div>
-              </li>
-              <li class="catalog-item">
-                <img src="img/img-pink-jpg.jpg" width="360" height="576" 
-                  alt="Главная страница сайта фирмы фотофильтров для смартфона">
-                <div>
-                   <a href="#"><h3>Pink</h3></a>
-                   <p></p>
-                   <span>10 000 руб.</span>
-                </div>
-              </li>
-              <li class="catalog-item">
-                <img src="img/img-barbershop-jpg.jpg" width="360" height="576" 
-                  alt="Главная страница сайта Барбершоп Бородинский">
-                <div>
-                   <a href="#"><h3>Барбершоп Бородинский</h3></a>
-                   <p></p>
-                   <span>11 000 руб.</span>
-                </div>
-              </li>
-              <li class="catalog-item">
-                <img src="img/img-mishka-jpg.jpg" width="360" height="576" 
-                  alt="Главная страница сайта магазина вязаных корзинок">
-                <div>
-                   <a href="#"><h3>Вязаные корзинки</h3></a>
-                   <p></p>
-                   <span>12 000 руб.</span>
-                </div>
-              </li>
-              <li class="catalog-item">
-                <img src="img/img-aplus-jpg.jpg" width="360" height="576" 
-                  alt="Главная страница сайта ВУЗа">
-                <div>
-                   <a href="#"><h3>Какой-то ВУЗ</h3></a>
-                   <p></p>
-                   <span>14 000 руб.</span>
-                </div>
-              </li>
-              <li class="catalog-item">
-                <img src="img/img-kvast-jpg.jpg" width="360" height="576" 
-                  alt="Главная страница сайта крафтового кваса">
-                <div>
-                   <a href="#"><h3>Крафтовый квасс</h3></a>
-                   <p></p>
-                   <span>15 000 руб.</span>
-                </div>
-              </li>
-            </ul>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Главная страница сайта фирмы фотофильтров для смартфона">
+              <div>
+                <a href="#"><h3>Pink</h3></a>
+                <p></p>
+                <span>10 000 руб.</span>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Главная страница сайта Барбершоп Бородинский">
+              <div>
+                <a href="#"><h3>Барбершоп Бородинский</h3></a>
+                <p></p>
+                <span>11 000 руб.</span>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Главная страница сайта магазина вязаных корзинок">
+              <div>
+                <a href="#"><h3>Вязаные корзинки</h3></a>
+                <p></p>
+                <span>12 000 руб.</span>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Главная страница сайта ВУЗа">
+              <div>
+                <a href="#"><h3>Какой-то ВУЗ</h3></a>
+                <p></p>
+                <span>14 000 руб.</span>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Главная страница сайта крафтового кваса">
+              <div>
+                <a href="#"><h3>Крафтовый квасс</h3></a>
+                <p></p>
+                <span>15 000 руб.</span>
+              </div>
+            </li>
+          </ul>
         </section>
     </main>
 
@@ -184,29 +152,20 @@
         <ul>
           <li>
             <label for="your-name">Ваше имя:</label>
-            <input class="letter-name" type="text" placeholder="Имя Фамилия"
-            id="your-name" name="your-name-send">
+            <input class="letter-name" type="text" placeholder="Имя Фамилия" id="your-name" name="your-name-send">
           </li>
           <li>
             <label for="your-email">Ваш e-mail:</label>
-            <input class="letter-email" type="text" placeholder="email@example.com"
-            id="your-email" name="your-email-send">
+            <input class="letter-email" type="text" placeholder="email@example.com" id="your-email" name="your-email-send">
           </li>
           <li>
             <label for="letter">Текст письма:</label>
-            <textarea id="letter" name="name-letter"
-            rows="5" cols="33">
-            В свободной форме
-            </textarea>
+            <textarea id="letter" name="name-letter" rows="5" cols="33">В свободной форме</textarea>
           </li>
         </ul>
-        <button type="submit" class="letter-submit button">
-          Отправить
-        </button>
+        <button type="submit" class="letter-submit button">Отправить</button>
       <form>  
-        <button type="button" class="letter-button button">
-          Закрыть
-        </button>
+        <button type="button" class="letter-button button">Закрыть</button>
      </section>
   </body>
 

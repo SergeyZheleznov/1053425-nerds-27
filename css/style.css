@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: #283136;
 
+
   background-color: #ffffff;
 }
 
@@ -57,41 +58,50 @@ button {
 }
 
 .main-navigation {
+  background-color: #eeeeee;
+}
+
+.site-navigation a {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
   text-align: left;
-}
-    
-.site-navigation {
+  font-weight: 500;
+  
   list-style: none;
+
+  background-color:#eeeeee;
 }
 
-.site-navigation a {
-  color: #000000;
-}
-
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site0navegation a:focus {
   color:#fb565a;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   color:rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation a:active {
-  text-decoration: none; 
+.red-line-catalog {
   border-bottom:1px solid red; 
   color: #000000;
 }
-/*не могу разобраться, как сделать подчёркивание ссылки, когда находишься на той странице, на которую ссылается данная ссылка*/
-.catalog-item {
-  list-style: none;
+
+ul.site-navigation {
+  margin: 0;
+  padding: 0;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
 .catalog-item {
+  list-style: none;
   text-align: left;
+  color:#000000;
+  background-color: #ffffff;
 }
 
 .catalog-item h3{
@@ -99,12 +109,6 @@ button {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.catalog-item{
-  color:#000000;
-  
-  background-color: #ffffff;
 }
 
 .catalog-content {
@@ -123,16 +127,17 @@ button {
   text-transform: uppercase;
 }
 
-.button-red a:hover {
+.button-red:hover,
+.button-red:focus {
   background-color: #e74246;
 }
 
-.button-red a:focus,
-.button-red a:active {
+.button-red:active {
   background-color:#d7373b;
   color:rgba(255, 255, 255, 0.3); 
+  box-shadow:0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
-/* красная кнопка не меняет цвет текста при нажатии*/
+
 .button-green {
   background-color: #00ca74;
   text-transform: uppercase;
@@ -145,14 +150,15 @@ button {
   height: 50px;
 }
 
-.button-green a:hover {
+.button-green:hover,
+.button-green:focus {
   background-color: #00bc6c;
 }
 
-.button-green a:focus,
-.button-green a:active {
+.button-green:active {
   background-color:#00aa62;
   color:rgba(255, 255, 255, 0.3); 
+  box-shadow:0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
 
 .button-yellow {
@@ -167,16 +173,17 @@ button {
   height: 50px;
 }
 
-.button-yellow a:hover {
+.button-yellow:hover,
+.button-yellow:focus {
   background-color: #eab534;
 }
 
-.button-yellow a:focus,
-.button-yellow a:active {
+.button-yellow:active {
   background-color:#e5a722;
   color:rgba(255, 255, 255, 0.3); 
+  box-shadow:0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
-/*зелёная и жёлтая тоже не меняют цвет*/
+
 .filters fieldset {
   border: none;
 }
@@ -250,21 +257,24 @@ filter ul {
 .social-button {
   color:#ffffff;
   background-color: #e1e1e1;
+  text-decoration: none;
+  border-radius: 10px;
 }
-
-.social-button a:hover {
+/* не разобрался, как сделать кнопки для социальных ссылок круглыми*/
+.social-button:hover,
+.social-button:focus {
   background-color: #e74246;
 }
 
-.social-button a:focus,
-.social-button a:active {
+.social-button:active {
   background-color:#d7373b;
-  color:rgba(0, 1, 1, 0.1); 
+  box-shadow:0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
-/*социальные кнопки тоже не меняются при нажатии*/
+
 .modal {
   color: #000000;
   background-color:#ffffff;
+
 }
 
 .modal ul {
@@ -277,19 +287,31 @@ filter ul {
   text-align:left;
 }
 
-.modal-letter input [type="text"],
-.modal-letter input [type="submit"],
-.modal-letter input [type="button"] {
-  font:inherit;
-  color: #000000;
-  text-transform: none;
- 
-  background-color: #ffffff;
-  border: inset 2px #d7dcde;
+.modal-letter-lable {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color:white;
 }
 
-.modal-letter input:focus {
-  border-color: #663316;
+.modal-letter-input {
+  color: rgba (68, 68, 68, 0.5);
+  text-transform: none;
+
+  background-color: #ffffff;
+  border: 2px inset #d7dcde;
+}
+
+.modal-letter-input:hover{
+  color:rgba(68, 68, 68, 0.5)
+  border: 2px inset #red;
+}
+
+.modal-letter-input:focus {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color:#000000;
 }
 
 .box-modal-letter {
@@ -298,3 +320,38 @@ filter ul {
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
+.letter-submit {
+  background-color: #eeeeee;
+  color:#000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.letter-submit:hover,
+.letter-submit:focus {
+  background-color: #dfdfdf;
+}
+
+.letter-submit:active {
+  background-color: #d5d5d5;
+  border-color:rgba(0, 0, 0, 0.3);
+}
+
+.letter-button {
+  background-color: #eeeeee;
+  color:#000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.letter-button:hover,
+.letter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.letter-button:active {
+  background-color: #d5d5d5;
+  border-color:rgba(0, 0, 0, 0.3);
+}

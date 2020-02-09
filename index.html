@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -23,7 +23,7 @@
     </header>
 
     <main class="container">
-      <h1 class="page-title">Это сайт веб-студии</h1>           
+      <h1 class="page-title visually-hidden">Это сайт веб-студии</h1>           
       <section class="catalog-main">
         <h2 class="visually-hidden">Список программных продуктов веб-студии</h2>
         <ul>        
@@ -72,20 +72,20 @@
       <h2> Напишите нам</h2>
       <ul class="letter-list">
         <li>
-          <label for="your-name">Ваше имя:</label>
-          <input class="letter-name" type="text" placeholder="Имя Фамилия" id="your-name" name="your-name-send">
+          <label class="modal-letter-label" for="your-name">Ваше имя:</label>
+          <input class="modal-letter-input" type="text" placeholder="Имя Фамилия" id="your-name" name="your-name-send">
         </li>
         <li>
-          <label for="your-email">Ваш e-mail:</label>
-          <input class="letter-email" type="text" placeholder="email@example.com" id="your-email" name="your-email-send">
+          <label class="modal-letter-label" for="your-email">Ваш e-mail:</label>
+          <input class="modal-letter-input" type="text" placeholder="email@example.com" id="your-email" name="your-email-send">
         </li>
         <li>
-          <label for="letter">Текст письма:</label>
+          <label class="modal-letter-label" for="letter">Текст письма:</label>
           <textarea class="letter-text" id="letter" name="name-letter" rows="5" cols="33">В свободной форме</textarea>
         </li>
       </ul>
       <button type="submit" class="letter-submit button">Отправить</button>
-      <form>  
+      </form>  
       <button type="button" class="letter-button button">Закрыть</button>
       </div>
      </section>

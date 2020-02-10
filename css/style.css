@@ -206,7 +206,7 @@ button {
   color: #283136;
 }
 
-.catalog-list {
+.filter-option {
   list-style: none;
 }
 
@@ -221,12 +221,32 @@ button {
   opacity: 0.5;
 }
 
+.filter-button {
+  background-color: #eeeeee;
+  color:#000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow:inset 0px 3px 0px 0 px rgba(0, 0, 0, 0.3);
+}
+
 .card {
-  background-color:#eeeeee;
+  background-color: #eeeeee;
 }
 
 .card-title {
-  background-color:#eeeeee;
   color:#000000;
   font-weight: 700;
   font-size: 16px;
@@ -236,13 +256,12 @@ button {
 }
 
 .card-information {
-  background-color:#eeeeee;
   color:#666666;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .card-button {
@@ -252,7 +271,7 @@ button {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
 }
 .main-footer {
   color: #444444;
@@ -268,7 +287,7 @@ button {
   text-transform: uppercase;
   font-size: 36px;
   line-height: 36px;
-  text-decoration: none;
+  text-transform: none;
   font-weight:700;
 }
 
@@ -278,7 +297,7 @@ button {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 22px;
-  text-decoration: none;
+  text-transform: none;
 }
 
 .footer-social {
@@ -309,7 +328,6 @@ button {
 .modal {
   color: #000000;
   background-color:#ffffff;
-
 }
 
 .modal ul {
@@ -357,30 +375,14 @@ button {
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
-.letter-submit {
-  background-color: #eeeeee;
-  color:#000000;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-}
-
-.letter-submit:hover,
-.letter-submit:focus {
-  background-color: #dfdfdf;
-}
-
-.letter-submit:active {
-  background-color: #d5d5d5;
-  border-color:rgba(0, 0, 0, 0.3);
-}
-
 .letter-button {
   background-color: #eeeeee;
   color:#000000;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
   font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .letter-button:hover,
@@ -390,5 +392,6 @@ button {
 
 .letter-button:active {
   background-color: #d5d5d5;
-  border-color:rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow:inset 0px 3px 0px 0 px rgba(0, 0, 0, 0.3);
 }

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Roboto', Arian,sans-serif;
+  font-family: "Roboto", "Arian", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -88,15 +88,16 @@ button {
   color: #000000;
 }
 
-ul.site-navigation {
+.site-navigation {
   margin: 0;
   padding: 0;
 }
 
-h1 {
+.page-title {
   margin: 0;
   padding: 0;
 }
+
 .catalog-item {
   list-style: none;
   text-align: left;
@@ -197,7 +198,7 @@ h1 {
   color:#000000;
 }
 
-filter ul {
+.filter ul {
   list-style:none;
   font-size: 16px;
   line-height: 20px;
@@ -220,6 +221,39 @@ filter ul {
   opacity: 0.5;
 }
 
+.card {
+  background-color:#eeeeee;
+}
+
+.card-title {
+  background-color:#eeeeee;
+  color:#000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-information {
+  background-color:#eeeeee;
+  color:#666666;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-button {
+  background-color: #fb565a;
+  color:#ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .main-footer {
   color: #444444;
   font-size: 16px;
@@ -235,6 +269,7 @@ filter ul {
   font-size: 36px;
   line-height: 36px;
   text-decoration: none;
+  font-weight:700;
 }
 
 .footer-sales {
@@ -260,7 +295,7 @@ filter ul {
   text-decoration: none;
   border-radius: 10px;
 }
-/* не разобрался, как сделать кнопки для социальных ссылок круглыми*/
+
 .social-button:hover,
 .social-button:focus {
   background-color: #e74246;
@@ -295,23 +330,25 @@ filter ul {
 }
 
 .modal-letter-input {
-  color: rgba (68, 68, 68, 0.5);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color:rgba(68, 68, 68, 0.5);
   text-transform: none;
 
   background-color: #ffffff;
   border: 2px inset #d7dcde;
 }
 
-.modal-letter-input:hover{
-  color:rgba(68, 68, 68, 0.5)
-  border: 2px inset #red;
+.modal-letter-input:hover, 
+.modal-letter-input:focus {
+  color:rgba(68, 68, 68, 0.5);
+  border: 2px inset #b4b9bb
 }
 
-.modal-letter-input:focus {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  color:#000000;
+.modal-letter-input:active {
+  columns: #444444;
+  border: 2px inset #000000;
 }
 
 .box-modal-letter {

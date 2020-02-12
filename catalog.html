@@ -18,16 +18,20 @@
         <ul class="site-navigation">                    
           <li> <a href="#">Студия</a></li>
           <li> <a href="#">Клиенты </a></li>
-          <li > <a class="red-line-catalog" href="catalog.html"> Магазин</a></li>
-          <li> <a href="#">корзина</a></li>
+          <li> <a href="catalog.html"> Магазин</a></li>
+          <li> <a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="basket-link" href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
-
+    
     <main class="container">
       <div class="page-title-container">
       <h1 class="page-title">Магазин готовых шаблонов</h1> 
       </div>
+      <div class="middle-part-page">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters" method="get" action="https://echo.htmlacademy.ru">
@@ -77,72 +81,79 @@
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
-      <section class="catalog-list">
+
+      <section class="catalog">
         <h2 class="visually-hidden">Карточки товаров</h2>
-          <ul> 
-            <li class="catalog-item">
+          <ul class="catalog-list-page-catalog"> 
+            <li class="catalog-item-page-catalog">
               <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Главная страница сайта туристической фирмы">
                 <div class="card">
                    <a href="#"><h3 class="card-title">Sedona</h3></a>
                    <p class="card-information">Информационный сайт<br>для туристов</p>
-                   <span class="card-button">9900 руб.</span>
+                   <span class="card-button"><br>9900 руб.</span>
                 </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-page-catalog">
               <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Главная страница сайта фирмы фотофильтров для смартфона">
               <div class="card">
                 <a href="#"><h3 class="card-title">Pink app</h3></a>
                 <p class="card-information">Продуктовый лендинг<br> приложения для iOS и Android</p>
-                <span class="card-button">9 900 руб.</span>
+                <span class="card-button"><br>9 900 руб.</span>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-page-catalog">
               <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Главная страница сайта Барбершоп Бородинский">
               <div class="card">
                 <a href="#"><h3 class="card-title">Barbershop</h3></a>
                 <p class="card-information">Сайт салона красоты.<br>Для мужчин, да.</p>
-                <span class="card-button">9 900 руб.</span>
+                <span class="card-button"><br>9 900 руб.</span>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-page-catalog">
               <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Главная страница сайта магазина вязаных корзинок">
               <div class="card">
                 <a href="#"><h3 class="card-title">Mishka</h3></a>
                 <p class="card-information">Интернет-магазин<br>вязанных игрушек</p>
-                <span class="card-button">9 900 руб.</span>
+                <span class="card-button"><br>9 900 руб.</span>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-page-catalog">
               <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Главная страница сайта ВУЗа">
               <div class="card">
                 <a href="#"><h3 class="card-title">A plus</h3></a>
                 <p class="card-information">Лендинг курсов повышения<br>квалификации</p>
-                <span class="card-button">9 900 руб.</span>
+                <span class="card-button"><br>9 900 руб.</span>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-page-catalog">
               <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Главная страница сайта крафтового кваса">
               <div class="card">
                 <a href="#"><h3 class="card-title">Кваст</h3></a>
                 <p class="card-information"> Промо-сайт производителя<br>крафтового кваса</p>
-                <span class="card-button">9 900 руб.</span>
+                <span class="card-button"><br>9 900 руб.</span>
               </div>
             </li>
           </ul>
         </section>
+        </div>
     </main>
 
     <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#"> Вконтакте</a></li>
-          <li><a class="social-button" href="#"> Фейсбук</a></li>
-          <li><a class="social-button" href="#"> Инстаграм</a></li>
-        </ul>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#"> Вконтакте</a></li>
+        <li><a class="social-button" href="#"> Фейсбук</a></li>
+        <li><a class="social-button" href="#"> Инстаграм</a></li>
+      </ul>
+      <div class="footer-words">
+        <div class="footer-slogan-wors">
+          <p class="footer-slogan"> Давай дружить, это выгодно!</p> 
+        </div>
+        <div class="footer-sales-words">   
+          <p class="footer-sales"> Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </div>
-      <p class="footer-slogan"> Давай дружить, это выгодно!</p> 
-      <p class="footer-sales"> Скидка 10% для друзей из социальных сетей</p>
     </footer>
+    
         
     <section class="modal modal-letter">
       <div class="box-moder-letter">

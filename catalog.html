@@ -8,53 +8,55 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body class="inner-page">
+  <body  class="inner-page">
 
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип проекта «Нёрдс»">
-        </a> 
-        <ul class="site-navigation">                    
-          <li> <a href="#">Студия</a></li>
-          <li> <a href="#">Клиенты </a></li>
-          <li> <a href="catalog.html"> Магазин</a></li>
-          <li> <a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="basket-link" href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main class="container">
-      <div class="page-title-container">
-      <h1 class="page-title">Магазин готовых шаблонов</h1> 
-      </div>
-      <div class="middle-part-page">
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Сетка:</legend>
-            <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="filter-adapted" value="value-net" checked>
-              <label for="filter-adapted">Адаптивная</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio"name="net" id="filter-fixed"  value="value-fixed">
-              <label for="filter-fixed">Фиксированная</label>   
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="filter-rubber" value="value-rubber">
-              <label for="filter-rubber">Резиновая</label>
-            </li>
+      <header class="main-header">
+        <div class="container">
+        <div class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип проекта «Нёрдс»">
+          </a> 
+          <ul class="site-navigation">                    
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html"> Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
-        </fieldset>
+          <ul class="user-navigation">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+        </div>
+      </header>
+          
+    <main>
+      <div class="container">
+      <div class="page-title-container"><h1 class="page-title">Магазин готовых шаблонов</h1></div>
+      <div class="middle-part-page">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="filter-adapted" value="value-net" checked>
+                <label for="filter-adapted">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio"name="net" id="filter-fixed"  value="value-fixed">
+                <label for="filter-fixed">Фиксированная</label>   
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="net" id="filter-rubber" value="value-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+            </fieldset>
             
-        <fieldset>
-          <legend>Особенности:</h2></legend>
+            <fieldset>
+            <legend>Особенности:</h2></legend>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" value="slider" id="filter-slider" checked>
@@ -77,17 +79,17 @@
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
-        </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
-        </form>
-      </section>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+          </form>
+        </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Карточки товаров</h2>
           <ul class="catalog-list-page-catalog"> 
             <li class="catalog-item-page-catalog">
               <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Главная страница сайта туристической фирмы">
-                <div class="card">
+                <div class="card visually-hidden">
                    <a href="#"><h3 class="card-title">Sedona</h3></a>
                    <p class="card-information">Информационный сайт<br>для туристов</p>
                    <span class="card-button"><br>9900 руб.</span>
@@ -95,7 +97,7 @@
             </li>
             <li class="catalog-item-page-catalog">
               <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Главная страница сайта фирмы фотофильтров для смартфона">
-              <div class="card">
+              <div class="card visually-hidden">
                 <a href="#"><h3 class="card-title">Pink app</h3></a>
                 <p class="card-information">Продуктовый лендинг<br> приложения для iOS и Android</p>
                 <span class="card-button"><br>9 900 руб.</span>
@@ -103,7 +105,7 @@
             </li>
             <li class="catalog-item-page-catalog">
               <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Главная страница сайта Барбершоп Бородинский">
-              <div class="card">
+              <div class="card visually-hidden">
                 <a href="#"><h3 class="card-title">Barbershop</h3></a>
                 <p class="card-information">Сайт салона красоты.<br>Для мужчин, да.</p>
                 <span class="card-button"><br>9 900 руб.</span>
@@ -111,7 +113,7 @@
             </li>
             <li class="catalog-item-page-catalog">
               <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Главная страница сайта магазина вязаных корзинок">
-              <div class="card">
+              <div class="card visually-hidden">
                 <a href="#"><h3 class="card-title">Mishka</h3></a>
                 <p class="card-information">Интернет-магазин<br>вязанных игрушек</p>
                 <span class="card-button"><br>9 900 руб.</span>
@@ -119,7 +121,7 @@
             </li>
             <li class="catalog-item-page-catalog">
               <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Главная страница сайта ВУЗа">
-              <div class="card">
+              <div class="card visually-hidden">
                 <a href="#"><h3 class="card-title">A plus</h3></a>
                 <p class="card-information">Лендинг курсов повышения<br>квалификации</p>
                 <span class="card-button"><br>9 900 руб.</span>
@@ -127,7 +129,7 @@
             </li>
             <li class="catalog-item-page-catalog">
               <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Главная страница сайта крафтового кваса">
-              <div class="card">
+              <div class="card visually-hidden">
                 <a href="#"><h3 class="card-title">Кваст</h3></a>
                 <p class="card-information"> Промо-сайт производителя<br>крафтового кваса</p>
                 <span class="card-button"><br>9 900 руб.</span>
@@ -136,20 +138,25 @@
           </ul>
         </section>
         </div>
+      </div>
     </main>
 
     <footer class="main-footer">
-      <ul class="footer-social">
-        <li><a class="social-button" href="#"> Вконтакте</a></li>
-        <li><a class="social-button" href="#"> Фейсбук</a></li>
-        <li><a class="social-button" href="#"> Инстаграм</a></li>
-      </ul>
-      <div class="footer-words">
-        <div class="footer-slogan-wors">
-          <p class="footer-slogan"> Давай дружить, это выгодно!</p> 
+      <div class="container">
+        <div class="footer">
+        <ul class="footer-social">
+          <li><a class="social-button" href="#"> Вконтакте</a></li>
+          <li><a class="social-button" href="#"> Фейсбук</a></li>
+          <li><a class="social-button" href="#"> Инстаграм</a></li>
+        </ul>
+        <div class="footer-words">
+          <div class="footer-slogan-wors">
+            <p class="footer-slogan"> Давай дружить, это выгодно!</p> 
+          </div>
+          <div class="footer-sales-words">   
+            <p class="footer-sales"> Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
-        <div class="footer-sales-words">   
-          <p class="footer-sales"> Скидка 10% для друзей из социальных сетей</p>
         </div>
       </div>
     </footer>

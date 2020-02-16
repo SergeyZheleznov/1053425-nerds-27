@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -31,16 +32,16 @@ body {
 }
 
 .container {
-  width: 1440px;
-  padding-left: 140px;
-  padding-right: 140px;
+  width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.inner-page {
-  color:#283136;
-  background-color: white;
+.main-header {
+  background-color: #eeeeee;
+  height: 70px;
 }
 
 .page-title {
@@ -293,6 +294,7 @@ a {
   width: 360px;
   height: 231px;
   margin-right: 40px;
+  display: none;
 }
 
 .card-title {
@@ -381,6 +383,7 @@ a {
 .modal {
   color: #000000;
   background-color:#ffffff;
+  display: none;
 }
 
 .modal ul {
@@ -457,6 +460,11 @@ a {
   justify-content:space-around;
   list-style: none;
   align-items: flex-end;
+}
+
+.user-navigation {
+  margin: 0px;
+  padding: 0px;
 }
 
 .user-navigation {

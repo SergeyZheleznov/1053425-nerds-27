@@ -1,5 +1,7 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -32,7 +34,7 @@ body {
 }
 
 .container {
-  width: 1400px;
+  width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -506,10 +508,14 @@ a {
   justify-content: space-around;
 }
 
+.catalog {
+  min-width: 800px;
+}
+
 .catalog-list-page-catalog {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .catalog-item-page-catalog {
@@ -518,7 +524,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 
-  max-width: 600;
+
   margin-bottom: 20px;
   margin-right: 40px;
 }

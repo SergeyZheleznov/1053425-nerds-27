@@ -14,7 +14,7 @@ body {
   color: #283136;
 
 
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -39,11 +39,19 @@ body {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  /*временно, убрать сегодня*/
+  outline: 2px solid #2eeb08; 
 }
 
 .main-header {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
   background-color: #eeeeee;
   height: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-title {
@@ -64,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   font: inherit;
   display: block;
@@ -79,64 +92,110 @@ a {
   border: none;
 }
 
-.site-navigation a {
-  font-size: 16px;
-  line-height: 30px;
-  padding-right: 45px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: left;
-  font-weight: 500;
-  
-  list-style: none;
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  /*background-color: #eeeeee;*/
+  outline: 2px solid #0a1281;
+  }
 
-  background-color:#eeeeee;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color:#fb565a;
-}
-
-.site-navigation a:active {
-  color:rgba(0, 0, 0, 0.3);
-}
-
-.user-navigation a {
-  font-size: 16px;
-  line-height: 30px;
-  padding-right: 45px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: left;
-  font-weight: 500;
-  
-  list-style: none;
-
-  background-color:#eeeeee;
-}
-
-.user-navigation a:hover,
-.user-navigation a:focus {
-  color:#fb565a;
-}
-
-.site-navigation a:active {
-  color:rgba(0, 0, 0, 0.3);
-}
-
-.user-navigation {
-  list-style: none;
-}
-
-.red-line-catalog {
-  border-bottom:1px solid red; 
-  color: #000000;
+.main-header-logo {
+  margin: 0;
+  padding: 0;
+  outline: 2px solid #0a1281;
 }
 
 .site-navigation {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  list-style: none;
+
+  /* Временно, сегодня убрать*/
+  background-color: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  outline: 2px solid #00ca74;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+  list-style: none;
+
+  /* Временно, сегодня убрать*/
+  background-color: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  outline: 2px solid #00ca74;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  padding-right: 45px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  
+  list-style: none;
+
+  /*background-color:#eeeeee;*/
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #c92e9a;
+
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus, 
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color:#fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation .basket-link {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 0px;
+  /*padding-right: 0;*/
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #df1507;
+}
+
+.basket-link::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 5px;
+
+  width: 15px;
+  height: 15px;
+
+  /*background-image:url("img/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  почему-то не работает текст выше, сдедал по другому*/
+
+  background-color: #eeeeee;
+}
+
+.basket {
+ position: absolute;
+ top: 7px;
+ left: 5px;
 }
 
 .page-title {
@@ -144,14 +203,41 @@ a {
   padding: 0;
 }
 
+.catalog-main {
+  margin: 0;
+  padding: 0;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #122886;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content:flex-start;
+  margin-top: 80px;
+ 
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #c4a80b;
+}
+
 .catalog-item {
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+  
   display: block;
   list-style: none;
   text-align: left;
   color:#000000;
   background-color: #ffffff;
   width: 300px;
-  height: 507px;
+  min-height: 427px;
+   
+  flex-wrap: wrap;
+    
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d40b2c;
 }
 
 .catalog-item h3{
@@ -162,7 +248,27 @@ a {
 }
 
 .catalog-content {
+  width: 300px;
+  height: 146px;
+
   background-color: #ffffff;
+}
+
+.catalog-list-page-catalog {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.catalog-item-page-catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  margin-bottom: 20px;
+  margin-right: 40px;
 }
 
 .button-red {
@@ -234,7 +340,117 @@ a {
   box-shadow:0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
 
-.filters fieldset {
+.filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  /* Для демонстрации*/
+  width: 260px;
+  margin: 50px auto;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-control .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .roggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 9 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-control .toggle-min {
+  left: 18px;
+  }
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+max-price {
+  text-align: right;
+}
+/*.filters fieldset {
   border: none;
 }
 
@@ -290,7 +506,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
   box-shadow:inset 0px 3px 0px 0 px rgba(0, 0, 0, 0.3);
 }
-
+*/
 .card {
   background-color: #eeeeee;
   width: 360px;
@@ -336,40 +552,49 @@ a {
   line-height: 22px;
 
   background-color: white;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d40b2c;
 }
 
-.footer-slogan {
-  color: black;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: none;
-  font-weight:700;
-}
+.footer-pre-social {
+  display: flex;
+  justify-content: flex-start;
 
-.footer-sales {
-  color: #444444;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: none;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #0b0ed4;
 }
 
 .footer-social {
-  text-align: center;
-}
-
-.footer-social ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 300px;
+  height: 218px;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #ac0bd4;
 }
 
 .social-button {
-  color:#ffffff;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  width: 79px;
+  height: 79px;
   background-color: #e1e1e1;
   text-decoration: none;
-  border-radius: 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
 }
 
 .social-button:hover,
@@ -380,6 +605,51 @@ a {
 .social-button:active {
   background-color:#d7373b;
   box-shadow:0px 3px 0px 0px rgba(0, 1, 1, 0.1)
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
+.footer-words {
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #510bd4;
+}
+
+.footer-slogan {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+  font-weight:700;
+  margin-bottom: 12px;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #0bd43d;
+}
+
+.footer-sales {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: none;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d4d10b;
 }
 
 .modal {
@@ -451,80 +721,3 @@ a {
 }
 
 
-.main-navigation {
-  display: flex;
-  justify-content: space-around;
-  background-color: #eeeeee;
-}
-
-.site-navigation {
-  display: flex;
-  justify-content:space-around;
-  list-style: none;
-  align-items: flex-end;
-}
-
-.user-navigation {
-  margin: 0px;
-  padding: 0px;
-}
-
-.user-navigation {
-  display: flex;
-  align-self: flex-end;
-}
-
-.catalog-list {
-  display:flex;
-  justify-content:space-between;
-  margin-top: 80px;
- }
-
-.catalog.item {
-  width: 350px;
-  min-height: 427px;
-  margin-bottom: 20px;
-  margin-left: 140px;
-}
-
-.catalog-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer-social {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.middle-part-page {
-  display: flex;
-  justify-content: space-around;
-}
-
-.catalog {
-  min-width: 800px;
-}
-
-.catalog-list-page-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-}
-
-.catalog-item-page-catalog {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-
-  margin-bottom: 20px;
-  margin-right: 40px;
-}

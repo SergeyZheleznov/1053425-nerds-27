@@ -1,0 +1,27 @@
+
+/*для фильтров на странице каталога*/
+body {
+  margin: 0;
+  padding: 25px;
+  font-family: sans-serif;
+}  
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}     
+.check {
+  padding-left: 1.2em;
+}   
+.check_input {
+  position:absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} 
+.check_box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 1em;
+  height: 1em;
+  background-image: url("../img/checkbox-off.svg");
+}

@@ -100,6 +100,11 @@ img {
   outline: 2px solid #0a1281;
 }
 
+.main-header-logo:active path {
+  opacity: 0.3;
+}
+
+
 .site-navigation {
   margin: 0;
   padding: 0;
@@ -112,6 +117,10 @@ img {
   background-color: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   outline: 2px solid #00ca74;
+}
+
+.site-navigation li {
+  margin-right: 45px;
 }
 
 .user-navigation {
@@ -133,7 +142,7 @@ img {
   display: block;
   font-size: 16px;
   line-height: 30px;
-  padding-right: 45px;
+ /* padding-right: 45px;*/
   color: #000000;
   text-transform: uppercase;
   text-align: left;
@@ -159,16 +168,16 @@ img {
   color:rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation .basket-link {
+.user-navigation .card-link {
   position: relative;
   padding-left: 50px;
   padding-right: 0px;
-  /*padding-right: 0;*/
+  
   /* Временно, сегодня убрать*/
   outline: 2px solid #df1507;
 }
 
-.basket-link::before {
+.card-link::before {
   content: "";
 
   position: absolute;
@@ -178,19 +187,16 @@ img {
   width: 15px;
   height: 15px;
 
-  /*background-image:url("img/basket-icon.svg");
+  background-image:url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  почему-то не работает текст выше, сдедал по другому*/
 
-  background-color: #eeeeee;
-}
+  background-color: #dee9e4;
+  opacity: 0.3;
 
-.basket {
- position: absolute;
- top: 7px;
- left: 5px;
-}
+  /*не понятно, как задать цвет корзине,
+  подогнал цвет путём изменения прозрачности*/
+ }
 
 .page-title {
   margin: 0;
@@ -317,13 +323,81 @@ img {
   box-shadow:inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
 
-.filter-item {
+
+
+/*рамки вокруг фильтров и карточек каталога
+и стиль названий рамок фильтров*/
+.middle-part-page {
+  margin: 0;
+  padding:0;
+  
+  display: flex;
+
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #12026b;
+}
+
+
+.filters {
+  margin: 0;
+  padding:0;
+  width: 261px;
+  margin-right: 100px;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d40b2c;
+ 
+}
+
+.filters fieldset {
+  border: none;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d40b2c;
+  
+}
+
+/*текст заголовков фильтров "Стоимость" и "Особенности"*/
+.filters legend {
+  font-size:18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+
+}
+
+/*текст подписей к фильтрам "Стоимость"
+и "Особенности" */
+
+.filters .option {
+  font-size:16px;
+  font-weight: 400;
+  line-height: 20px;
+  color:#283136;
+  margin-bottom: 15px;
+
+  display: block;
+}
+
+.catalog-list-page-catalog {
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d4440b;
+}
+
+/* сложный фильтр (первый) на странице catalog
+в настоящий момент (25 февраля 2020 года)
+отложил делать, поскольку не сделаны обязательные задания про проекту
+.complicated-filter {
   margin: 0;
   padding: 0;
 
   border: none;
 
   /* Для демонстрации*/
+  /*
   width: 260px;
   margin: 50px auto;
 }
@@ -427,92 +501,145 @@ img {
 .max-price {
   text-align: right;
 }
+*/
 
-.middle-part-page {
-  margin: 0;
-  padding:0;
-  
-  display: flex;
+/* Второй фильтр (сетки),
+то есть радиобатоны */
 
-  /* Временно, сегодня убрать*/
-  outline: 2px solid #12026b;
+.radio {
+  padding-left: 1.2em;
 }
 
-.filters {
-  margin: 0;
-  padding:0;
-  width: 261px;
-  /* Временно, сегодня убрать*/
-  outline: 2px solid #d40b2c;
-  margin-right: 100px;
+.radio_input {
+  position:absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.catalog-list-page-catalog {
-  margin: 0;
-  padding:0;
-  display: flex;
-  flex-wrap: wrap;
+.radio_box {
+  position: absolute;
+  margin-left: -1.9em;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.4;
+ }
  
-  /* Временно, сегодня убрать*/
-  outline: 2px solid #d4440b;
+/* когда у нашего инпута состояние чект, то есть стоит галочка,
+то у нас должна быть картинка с галочкойи на неё ничего не наведено,
+прозрачность 0.4*/
+
+.radio_input:checked + .radio_box {
+  background-image: url("../img/radio-on.svg"); 
+  opacity: 0.4;
 }
 
-.catalog-item-page-catalog {
-  margin: 0;
-  padding:0;
+/* когда у нашего инпута состояние незачеканное, 
+но на него когда наведена мышка на кнопку или 
+или надпись (состояние hover), прозрачность должна поменяться
+на 1.0*/
 
-  width: 360px;
-  height:610px;
-  margin-bottom: 40px;
-  
-  display: flex;
-  flex-direction: column;
+.radio_input:hover + .radio_box {
+  background-image: url("../img/radio-off.svg");
+  opacity: 1.0;
+}
+
+/*когда у нашего инпута состояние зачеканное,
+и на него наведена мышка на кнопку или на надпись (состояние hover),
+прозрачность должна поменяться на 1.0*/
+
+.radio_input:checked:hover + .radio_box {
+  background-image: url("../img/radio-on.svg");
+  opacity: 1.0;
+}
+
+.option {
+  display: block;
+  margin-bottom: 0.25em; 
+}
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check_input {
+  position:absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*картинка квадратиком имеет прозрачность 0.4, когда
+на неё ничего не наведено*/
+
+.check_box {
+  position: absolute;
+  margin-left: -1.9em;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.4;
+ }
  
-  margin-left:40px
+/* когда у нашего инпута состояние чект, то есть стоит галочка,
+то у нас должна быть картинка с галочкойи на неё ничего не наведено,
+прозрачность 0.4*/
+
+.check_input:checked + .check_box {
+  background-image: url("../img/checkbox-on.svg"); 
+  opacity: 0.4;
 }
 
-.upper-item-part {
-  margin: 0;
-  padding:0;
+/* когда у нашего инпута состояние незачеканное, 
+но на него когда наведена мышка на кнопку или 
+или надпись (состояние hover), прозрачность должна поменяться
+на 1.0*/
+
+.check_input:hover + .check_box {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 1.0;
 }
 
-.filters fieldset {
-  border: none;
+/*когда у нашего инпута состояние зачеканное,
+и на него наведена мышка на кнопку или на надпись (состояние hover),
+прозрачность должна поменяться на 1.0*/
 
+.check_input:checked:hover + .check_box {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 1.0;
 }
 
-.filters legend {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-  font-weight: 700;
-  text-transform: uppercase;
-  color:#000000;
+/*Disabled*/
+/*Данное состояние пока не работает, поскольку 
+кнопок, которые заблокированы, я на макете пока не вижу, 
+но стили для таких кнопок проведены и работают
+Так же сделан соответствующий HTML-код
+когда инпут задизаблен, у нас прозрачность падает до 0.1
+*//*
+.check_input:disabled + .check_box {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.1;
 }
 
-.filter ul {
-  list-style:none;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: left;
-  color: #283136;
+.check_input:checked:disabled + .check_box {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.1;
 }
 
-.filter-option {
-  list-style: none;
+
+/*когда инпут задизаблен, 
+текст меняет цвет на rgba(40,49,54,0.3),
+задача изменения цвета текста в зависимости от того, 
+задизаблен или нет мой инпут, у меня на 25.02.2020 не решена*/
+/*.check_input:disabled /* что здесь ставить - не понятно*/ /*{
+  rgba(40,49,54,0.3)
 }
 
-.filter-input:hover + label,
-.filter-inpur:focus + label {
-  color: #663d15;
-}
+.check_input:checked:disabled /* что здесь ставить - не понятно*/ /*{
+  rgba(40,49,54,0.3)
+*/
 
-.filter-input:disabled + label{
-  color: #000000;
-
-  opacity: 0.5;
-}
-
+/*кнопка фильтра*/
 .filter-button {
   background-color: #eeeeee;
   color:#000000;
@@ -521,6 +648,7 @@ img {
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+  width: 260px;
 }
 
 .filter-button:hover,
@@ -534,17 +662,74 @@ img {
   box-shadow:inset 0px 3px 0px 0 px rgba(0, 0, 0, 0.3);
 }
 
+/*секция с карточками каталога*/
+.catalog-item-page-catalog {
+  margin: 0;
+  padding:0;
+
+  width: 360px;
+  padding-top: 40px;
+   
+  display: flex;
+  flex-direction: column;
+  position:relative;
+
+  margin-left:40px;
+
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #310cb8;
+}
+
+/*серая полоска над главной страницей продаваемых сайтов,
+полоска меняет цвет при действиях с ней, называется browser*/
+
+.catalog-item-page-catalog::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 360px;
+  height: 40px;
+
+  background-image:url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.12;
+  background-color:#ffffff;
+ /* Временно, сегодня убрать*/
+ outline: 2px solid #0bd415;
+}
+
+
+/* к сожалению, hover и focus не работают */
+.catalog-item-page-catalog::before:hover 
+.catalog-item-page-catalog::before:focus {
+  opacity: 0.9;
+}
+
+
 .card {
-  position: relative;
-  right: 0px;
-  bottom: 180px;
-  z-index: 2;
+  position:absolute;
+  right: -40px;
+  bottom: 0px;
+  
   background-color: #eeeeee;
   width: 360px;
   height: 231px;
   margin-right: 40px;
+  padding-top: 40px;
+  display: none;
   /* Временно, сегодня убрать*/
   outline: 2px solid #d4440b;
+}
+
+/*к сожалению, этот ховер тоже не работает,
+не понимаю, что я делаю неправильно*/ 
+.catalog-item-page-catalog:hover {
+  display: block;
+  z-index: 2;
 }
 
 .card-title {
@@ -578,6 +763,7 @@ img {
   height: 50px;
   margin-left: 80px;
 }
+
 .main-footer {
   color: #444444;
   font-size: 16px;
@@ -747,28 +933,3 @@ img {
   box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
 }
 
-
-/*для фильтров на странице каталога*/
-.option {
-  display: block;
-  margin-bottom: 0.25em;
-}
-
-.check {
-  padding-left: 1.2em;
-}
-
-.check_input {
-  position:absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.check_box {
-  position: absolute;
-  margin-left: -1.2em;
-  width: 1em;
-  height: 1em;
-  background-image: url(..img/checkbox-off.svg);
-}

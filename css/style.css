@@ -100,6 +100,10 @@ img {
   outline: 2px solid #0a1281;
 }
 
+.main-header-logo:hover path {
+  opacity: 0.8;
+}
+
 .main-header-logo:active path {
   opacity: 0.3;
 }
@@ -192,8 +196,6 @@ img {
   background-position: 0 0;
 
   background-color: #dee9e4;
-  opacity: 0.3;
-
   /*не понятно, как задать цвет корзине,
   подогнал цвет путём изменения прозрачности*/
  }
@@ -323,8 +325,6 @@ img {
   box-shadow:inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1)
 }
 
-
-
 /*рамки вокруг фильтров и карточек каталога
 и стиль названий рамок фильтров*/
 .middle-part-page {
@@ -337,6 +337,24 @@ img {
   outline: 2px solid #12026b;
 }
 
+/*полоска в меню, которая появляется, когда мы находимся
+на странице каталога*/
+
+.shop_page::after {
+  content:"";
+  position: absolute;
+  width: 74px;
+  height: 2px;
+  background-color: #fb565a;
+
+  top: 70px;
+  display: none;
+}
+
+.shop_page:active::after {
+  background-color: #fb565a;
+  display: block;
+}
 
 .filters {
   margin: 0;
@@ -362,7 +380,10 @@ img {
   line-height: 30px;
   color: #000000;
 
-}
+  text-transform: uppercase;
+
+  margin-left: -12px;
+ }
 
 /*текст подписей к фильтрам "Стоимость"
 и "Особенности" */
@@ -556,11 +577,11 @@ img {
 
 .option {
   display: block;
-  margin-bottom: 0.25em; 
+  margin-bottom: 6px; 
 }
 
 .check {
-  padding-left: 1.2em;
+  padding-left: 22px;
 }
 
 .check_input {
@@ -574,10 +595,13 @@ img {
 
 .check_box {
   position: absolute;
-  margin-left: -1.9em;
-  width: 23px;
+  margin-left: -35px;
+  width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
   opacity: 0.4;
  }
  
@@ -675,6 +699,7 @@ img {
   position:relative;
 
   margin-left:40px;
+  margin-bottom: 33px;
 
   /* Временно, сегодня убрать*/
   outline: 2px solid #310cb8;
@@ -702,56 +727,100 @@ img {
  outline: 2px solid #0bd415;
 }
 
-
-/* к сожалению, hover и focus не работают */
-.catalog-item-page-catalog::before:hover 
-.catalog-item-page-catalog::before:focus {
-  opacity: 0.9;
+.catalog-item-page-catalog:hover::before, 
+.catalog-item-page-catalog:focus::before {
+  opacity: 1.0;
 }
-
 
 .card {
   position:absolute;
-  right: -40px;
-  bottom: 0px;
+  bottom: 0;
   
   background-color: #eeeeee;
   width: 360px;
   height: 231px;
-  margin-right: 40px;
-  padding-top: 40px;
+  
   display: none;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #10f508;
+}
+
+.catalog-item-page-catalog:hover .card{
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+}
+
+.a_card_title {
+  display: flex;
+  position: absolute;
+  top: 35px;
+ 
+
+  width: 72x;
+  height: 14px;
+ 
+
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #3206ac;
+}
+
+.card-title {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  color:#000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  
+  
+  width: 71x;
+  height: 13px;
+    
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #d4440b;
+}
+
+.card-information {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  top: 74px;
+  margin: 0 auto;
+  color:#666666;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: none;
+  font-family: "Roboto";
+ 
+  min-width: 200px;
+  height: 34px;
+  
+  
+
   /* Временно, сегодня убрать*/
   outline: 2px solid #d4440b;
 }
 
-/*к сожалению, этот ховер тоже не работает,
-не понимаю, что я делаю неправильно*/ 
-.catalog-item-page-catalog:hover {
-  display: block;
-  z-index: 2;
-}
-
-.card-title {
-  color:#000000;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.card-information {
-  color:#666666;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: none;
-}
-
 .card-button {
   display: block;
+
+  position: absolute;
+  top: 138px;
+
+  
   background-color: #fb565a;
   color:#ffffff;
   font-weight: 500;
@@ -761,8 +830,10 @@ img {
   text-transform: none;
   width: 200px;
   height: 50px;
-  margin-left: 80px;
-}
+  
+  font-family: "Roboto";
+  line-height: 50px;
+  }
 
 .main-footer {
   color: #444444;

@@ -740,6 +740,8 @@ img {
   width: 360px;
   height: 231px;
   
+  padding: 35px 50px 43px;
+
   display: none;
   /* Временно, сегодня убрать*/
   outline: 2px solid #10f508;
@@ -754,25 +756,19 @@ img {
 
 .a_card_title {
   display: flex;
-  position: absolute;
-  top: 35px;
+  margin-bottom:25px;
  
-
-  width: 72x;
+  width: 90x;
   height: 14px;
  
-
   /* Временно, сегодня убрать*/
   outline: 2px solid #3206ac;
 }
 
 .card-title {
-  display: block;
-  flex-direction: column;
-  align-items: center;
   padding: 0;
   margin: 0;
-
+  
   color:#000000;
   font-weight: 700;
   font-size: 16px;
@@ -781,9 +777,10 @@ img {
   text-transform: uppercase;
   font-family: "Roboto";
   
-  
   width: 71x;
   height: 13px;
+
+  margin-bottom: 30px;
     
   /* Временно, сегодня убрать*/
   outline: 1px solid #d4440b;
@@ -793,10 +790,6 @@ img {
   display: block;
   padding: 0;
   margin: 0;
-
-  position: absolute;
-  top: 74px;
-  margin: 0 auto;
   color:#666666;
   font-weight: 500;
   font-size: 16px;
@@ -808,7 +801,7 @@ img {
   min-width: 200px;
   height: 34px;
   
-  
+  margin-bottom: 30px;
 
   /* Временно, сегодня убрать*/
   outline: 2px solid #d4440b;
@@ -817,10 +810,6 @@ img {
 .card-button {
   display: block;
 
-  position: absolute;
-  top: 138px;
-
-  
   background-color: #fb565a;
   color:#ffffff;
   font-weight: 500;
@@ -833,6 +822,7 @@ img {
   
   font-family: "Roboto";
   line-height: 50px;
+
   }
 
 .main-footer {

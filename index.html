@@ -99,28 +99,34 @@
       </div>
     </footer>
 
-    <section class="modal modal-letter">
+    
+    <div class="modal">
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       <div class="box-moder-letter">
       <form class="letter" method="post" action="https://echo.htmlacademy.ru">
-      <h2> Напишите нам</h2>
-      <ul class="letter-list">
-        <li>
-          <label class="modal-letter-label" for="your-name">Ваше имя:</label>
-          <input class="modal-letter-input" type="text" placeholder="Имя Фамилия" id="your-name" name="your-name-send">
-        </li>
-        <li>
-          <label class="modal-letter-label" for="your-email">Ваш e-mail:</label>
-          <input class="modal-letter-input" type="text" placeholder="email@example.com" id="your-email" name="your-email-send">
-        </li>
-        <li>
-          <label class="modal-letter-label" for="letter">Текст письма:</label>
-          <textarea class="letter-text" id="letter" name="name-letter" rows="5" cols="33">В свободной форме</textarea>
-        </li>
-      </ul>
-      <button type="submit" class="letter-button button">Отправить</button>
+        <h2> Напишите нам</h2>
+          <div class="first-line">
+            <div class="one-half-width">    
+              <label class="modal-letter-label" for="your-name">Ваше имя:</label>
+              <input class="modal-letter-input" type="text" placeholder="Имя Фамилия" 
+              id="your-name" name="your-name-send">
+            </div>
+            <div class="two-half-width">
+              <label class="modal-letter-label" for="your-email">Ваш e-mail:</label>
+              <input class="modal-letter-input" type="text" placeholder="email@example.com" 
+              id="your-email" name="your-email-send">
+            </div>
+          </div>
+           <label class="modal-letter-label" for="letter">Текст письма:</label>
+          <textarea class="letter-text" id="cluent-letter" name="name-letter" 
+           rows="5" cols="33">В свободной форме</textarea>
+       
+        <button type="submit" class="letter-button button">Отправить</button>
       </form>  
-      <button type="button" class="letter-button button">Закрыть</button>
-      </div>
-     </section>
+
+    </div>
+    
   </body>
 </html>

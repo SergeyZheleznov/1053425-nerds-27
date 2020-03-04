@@ -40,6 +40,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 
+  /*временно, убрать сегодня*/
+  outline: 2px solid #2eeb08; 
 }
 
 .main-header {
@@ -89,12 +91,14 @@ img {
   justify-content: space-between;
   width: 1160px;
   /*background-color: #eeeeee;*/
-}
+  outline: 2px solid #0a1281;
+  }
 
 .main-header-logo {
   margin: 0;
   padding: 0;
- }
+  outline: 2px solid #0a1281;
+}
 
 .main-header-logo:hover path {
   opacity: 0.8;
@@ -112,6 +116,11 @@ img {
   justify-content:space-around;
   align-items: flex-end;
   list-style: none;
+
+  /* Временно, сегодня убрать*/
+  background-color: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  outline: 2px solid #00ca74;
 }
 
 .site-navigation li {
@@ -125,6 +134,11 @@ img {
   justify-content:space-around;
   align-items: flex-end;
   list-style: none;
+
+  /* Временно, сегодня убрать*/
+  background-color: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  outline: 2px solid #00ca74;
 }
 
 .site-navigation a,
@@ -141,6 +155,9 @@ img {
   list-style: none;
 
   /*background-color:#eeeeee;*/
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #c92e9a;
+
 }
 
 .site-navigation a:hover,
@@ -160,6 +177,8 @@ img {
   padding-left: 50px;
   padding-right: 0px;
   
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #df1507;
 }
 
 .card-link::before {
@@ -187,6 +206,8 @@ img {
 .catalog-main {
   margin: 0;
   padding: 0;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #122886;
 }
 
 .catalog-list {
@@ -195,6 +216,9 @@ img {
   display:flex;
   justify-content:flex-start;
   margin-top: 80px;
+ 
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #c4a80b;
 }
 
 .catalog-item {
@@ -211,6 +235,9 @@ img {
   min-height: 427px;
    
   flex-wrap: wrap;
+    
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d40b2c;
 }
 
 .catalog-item h3{
@@ -319,7 +346,7 @@ img {
   opacity: 0.3;
 }
 
-.first-line-logo {
+.first-line {
   display: block;
   width: 49px;
   height: 52px;
@@ -378,7 +405,7 @@ img {
 
 .third-empty {
   display: block;
-  width: 61px;
+  width: 63px;
   height: 52px;
   margin-top: 64px;
 }
@@ -442,6 +469,9 @@ img {
   box-sizing: border-box;
   padding: 0;
   margin-bottom: 28px;
+
+  /* Временно, сегодня убрать*/
+   outline: 2px solid #d40b2c;
 }
 
 .studio-address-tel {
@@ -455,6 +485,9 @@ img {
   box-sizing: border-box;
   padding: 0;
   margin-bottom: 28px;
+
+  /* Временно, сегодня убрать*/
+   outline: 2px solid #d40b2c;
  }
 
  .button-map{
@@ -500,6 +533,9 @@ img {
   padding:0;
   
   display: flex;
+
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #12026b;
 }
 
 /*полоска в меню, которая появляется, когда мы находимся
@@ -526,10 +562,16 @@ img {
   padding:0;
   width: 261px;
   margin-right: 100px;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d40b2c;
+ 
 }
 
 .filters fieldset {
-  border: none;  
+  border: none;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d40b2c;
+  
 }
 
 /*текст заголовков фильтров "Стоимость" и "Особенности"*/
@@ -557,6 +599,12 @@ img {
   display: block;
 }
 
+.right-part-page-catalog {
+
+  /* Временно, сегодня убрать*/
+  outline: 5px solid #92e70a;
+}
+
 /*надписи над правой частью страницы catalog,
 там, где у нас две колонки главных страниц сайтов*/
 
@@ -577,6 +625,8 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #e70aca;
 }
 
 .right-sorting {
@@ -588,6 +638,8 @@ img {
   justify-content: space-between;
 
   width:360px;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #e70aca;
 }
 
 .sort {
@@ -599,6 +651,8 @@ img {
   text-transform: uppercase;
   text-align: left;
   padding: 0px;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #0ae741;
 }
 
 .sort:hover,
@@ -612,22 +666,33 @@ img {
 
 .price-sort {
   margin-right: 15px;
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #2b0ae7;
 }
 
 .type-sort {
   margin-right: 15px;
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #2b0ae7;
 }
 
 .name-sort {
   margin-right: 48px;
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #2b0ae7;
 }
 
 .arrow-down {
   margin-right: 18px;
+  
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #2b0ae7;
 }
 
 .arrow-up {
   margin-right: 0px;
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #2b0ae7;
 }
 
 .arrow {
@@ -648,6 +713,9 @@ img {
   padding:0;
   display: flex;
   flex-wrap: wrap;
+ 
+  /* Временно, сегодня убрать*/
+  outline: 5px solid #2b0ae7;
 }
 
 
@@ -659,6 +727,11 @@ img {
   height: 330px;
   margin: 0;
   padding: 0;
+   
+
+   /* Временно, сегодня убрать*/
+   outline: 5px solid #2b0ae7;
+ 
 }
 
 .name-filter-compl {
@@ -672,12 +745,18 @@ img {
   font-weight: 700;
   letter-spacing: 0.18px;
   color:#000000;
+  /* Временно, сегодня убрать*/
+  outline: 3px solid #1ce70a;
 }
 
 .range-filter {
   display: block;
   width: 260px;
   height: 250px;
+  
+
+  /* Временно, сегодня убрать*/
+  outline: 3px solid #0ae766; 
 }
 
 .range-controls {
@@ -689,6 +768,8 @@ img {
   height: 81px;
   background-color: #f1f1f1;
   border-radius: 5px;
+  /* Временно, сегодня убрать
+  outline: 5px solid #0a71e7; */
 }
 
 .scale {
@@ -699,6 +780,9 @@ img {
   width: 260px;
 
   background: #d7dcde;
+  
+  /*Временно, сегодня убрать*//*
+  outline: 5px solid #0a71e7;*/
 }
 
 .bar {
@@ -725,6 +809,9 @@ img {
   box-shadow:inset 9 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
+
+  /*Временно, сегодня убрать*/
+  outline: 5px solid #0a71e7;
 }
 
 .range-controls .toggle-min {
@@ -740,6 +827,9 @@ img {
   position:relative;
   font-size: 0;
   margin-top: 13px;
+  
+  /*Временно, сегодня убрать*/
+  outline: 3px solid #e70a4c;
 }
 
 .price-controls label {
@@ -749,6 +839,8 @@ img {
   font-size: 16px;
   text-transform: uppercase;
   line-height: 38px;
+  /*Временно, сегодня убрать*/
+  outline: 3px solid #bee70a;
 }
 
 .price-controls input {
@@ -767,14 +859,20 @@ img {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
- }
+   /*Временно, сегодня убрать*/
+   outline: 1px solid #0a71e7;
+}
 
 .max-price {
    display: block;
+   /*Временно, сегодня убрать*/
+   outline:6x solid #e70a0a;
 }
 
 .min-price {
   display: block;
+  /*Временно, сегодня убрать*/
+  outline:6x solid #0ae7d5;
 }
 /* Второй фильтр (сетки),
 то есть радиобатоны */
@@ -953,6 +1051,8 @@ img {
   margin-left:40px;
   margin-bottom: 33px;
 
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #310cb8;
 }
 
 /*серая полоска над главной страницей продаваемых сайтов,
@@ -973,6 +1073,8 @@ img {
   background-position: 0 0;
   opacity: 0.12;
   background-color:#ffffff;
+ /* Временно, сегодня убрать*/
+ outline: 2px solid #0bd415;
 }
 
 .catalog-item-page-catalog:hover::before, 
@@ -991,6 +1093,8 @@ img {
   padding: 35px 50px 43px;
 
   display: none;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #10f508;
 }
 
 .catalog-item-page-catalog:hover .card{
@@ -1006,6 +1110,9 @@ img {
  
   width: 90x;
   height: 14px;
+ 
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #3206ac;
 }
 
 .card-title:hover{
@@ -1032,6 +1139,9 @@ img {
   height: 13px;
 
   margin-bottom: 30px;
+    
+  /* Временно, сегодня убрать*/
+  outline: 1px solid #d4440b;
 }
 
 .card-information {
@@ -1050,6 +1160,9 @@ img {
   height: 34px;
   
   margin-bottom: 30px;
+
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d4440b;
 }
 
 .card-button {
@@ -1076,11 +1189,17 @@ img {
   line-height: 22px;
 
   background-color: white;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d40b2c;
 }
 
 .footer-pre-social {
   display: flex;
   justify-content: flex-start;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #0b0ed4;
 }
 
 .footer-social {
@@ -1093,6 +1212,9 @@ img {
   text-align: center;
   width: 300px;
   height: 218px;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #ac0bd4;
 }
 
 .social-button {
@@ -1128,6 +1250,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #510bd4;
 }
 
 .footer-slogan {
@@ -1141,6 +1265,9 @@ img {
   text-transform: none;
   font-weight:700;
   margin-bottom: 12px;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #0bd43d;
 }
 
 .footer-sales {
@@ -1152,6 +1279,9 @@ img {
   font-size: 16px;
   line-height: 22px;
   text-transform: none;
+
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d4d10b;
 }
 
 /*модальное окно*/
@@ -1172,8 +1302,8 @@ img {
   width: 960px;
   height: 590px;
 
-  display: none;
-  /*z-index: 3;*/
+  z-index: 3;
+  /*display: none;*/
 }
 
 .modal-close {
@@ -1238,7 +1368,7 @@ img {
 
 .modal label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1251,7 +1381,19 @@ img {
   flex-direction: row;
   justify-content: space-between;
 
+  width: 760px;
+  height:80px;
+
   margin-bottom: 30px;
+}
+
+.one-half-width {
+  display: block;
+}
+
+
+.two-half-width {
+  display: block;
 }
 
 .letter input[type="text"]{
@@ -1431,15 +1573,21 @@ img {
   color: #000000;
   width:650px;
   margin-bottom: 15px;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d4d10b;
 }
  
 .what-list {
   list-style: none;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #0e0bd4;
 }
 
 .what-item {
   display: block;
   margin-bottom: 20px;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #d4d10b;
 }
 
 .right-side-fourth-part {
@@ -1466,6 +1614,8 @@ img {
   width:330px;
   margin-bottom: 49px;
   margin-right: 15px;
+   /* Временно, сегодня убрать*/
+   outline: 2px solid #1f0bd4;
 }
 
 .percentes {
@@ -1473,6 +1623,8 @@ img {
   flex-wrap: wrap;
   width: 360px;
   justify-content: space-between;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d44b0b;
 }
 
 .percentes-item {
@@ -1486,6 +1638,9 @@ img {
   color: #000000;
  
   margin-bottom: 40px;
+
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d4d10b;
 }
 
 .small {
@@ -1510,4 +1665,6 @@ img {
   color:#283136;
   width: 110px;
   height: 33px;
+  /* Временно, сегодня убрать*/
+  outline: 2px solid #d4d10b;
 }

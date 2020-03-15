@@ -40,30 +40,31 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
          
-            <div class="filter-item">
-              <div class="name-filter-compl">Стоимость:</div>  
+            <fildset class="filter-item">
+              <legend class="name-filter-compl">Стоимость:</legend>  
               <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div> 
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                <div class="range-controls"> 
+                  <div class="scale"> <div class="bar"></div></div>
+               
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от<input name="min-price" type="number" value="0"></label>
-                  <label class="max-price">до<input name="max-price" type="number" value="15000"></label>
+                 <label class="min-price">от<input name="min-price" 
+                    type="number" value="0"></label>
+                  <label class="max-price">до<input name="max-price" 
+                    type="number" value="15000"></label>
                 </div>
               </div> 
-            </div>
+            </fildset>
          
-            <fieldset>
+            <fieldset class="filter-radio">
               <legend>Сетка:</legend>
               
               <label class="radio option">
                 <input class="radio_input" type="radio" name="name_radio" value="adapter" checked>
                 <span class="radio_box"></span>
-                Адаптированная
+                Адаптивная
               </label>  
              
               <label class="radio option">
@@ -79,7 +80,7 @@
               </label>
             </fieldset>
            
-            <fieldset>
+            <fieldset class="filter-checked">
               <legend>Особенности:</legend>
               
               <label class="check option">
@@ -137,12 +138,12 @@
           <section class="sorting">
             <h2 class="text-sorting">сортировать:</h2>
             <ul class="center-sorting">
-              <li class="sort"><a>по цене</a></li>
-              <li class="sort"><a>по типу</a></li>
-              <li class="sort"><a>по названию</a></li>
+              <li class="sort-current"><a  href="#">по цене</a></li>
+              <li><a href="#">по типу</a></li>
+              <li><a href="#">по названию</a></li>
             </ul>
             <ul class="right-sorting">
-              <li><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
+              <li class="sort-current"><a class="arrow" href="#"><span class="visually-hidden">Стрелка вниз</span>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                 <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
@@ -165,7 +166,7 @@
                   <div class="card">
                     <a class="a_card_title" href="#"><h3 class="card-title">Sedona</h3></a>
                     <p class="card-information">Информационный сайт <br> для туристов</p>
-                    <span class="card-button button">9900 руб.</span>
+                    <span class="card-button button">9 900 руб.</span>
                   </div>
               </li>
               <li class="catalog-item-page-catalog">
@@ -211,7 +212,7 @@
             </ul>
         
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current"><a>1</a></li>
+              <li class="pagination-item pagination-current"><a href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
@@ -220,11 +221,9 @@
         </div>
       </div>
 
-      <section class="map">
+      <section class="map map-catalog">
         <h2 class="visually-hidden">Карта и контакты</h2>
-        <img src="img/2.jpg"  width="1440" height="416" alt="карта">
-        <img src="img/map-marker.png" width="231" height="190" class="marker" alt="Обозначение места на карте"> 
-       
+        <img src="img/map-marker4.jpg" width="1160" height="416" alt="карта">
         <div class="map-contacts">
           <h2 class="studio-name">nёrds design studio</h2>
           <address class="studio-address">191186, Санкт-Петебург, ул. Б. Конюшенная д.19/8</address>
@@ -258,7 +257,7 @@
               </svg></a></li>
           </ul>
           <div class="footer-words">
-            <p class="footer-slogan"> Давай дружить, это выгодно!</p>
+            <p class="footer-slogan"> Давайте дружить, это выгодно!</p>
             <p class="footer-sales"> Скидка 10% для друзей из социальных сетей</p>
           </div>
         </section>

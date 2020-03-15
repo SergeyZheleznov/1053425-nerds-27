@@ -53,8 +53,8 @@ body {
 .page-title-container {
   background-color: #eeeeee;
 
-  padding-top: 98px;
-  padding-bottom: 116px;
+  padding-top: 70px;
+  padding-bottom: 110px;
 }  
 
 a {
@@ -115,28 +115,25 @@ img {
   opacity: 0.3;
 }
 
-
 .site-navigation {
   display: flex;
-  justify-content:space-around;
-  align-items: flex-end;
+  justify-content:space-between;
+  align-items: center;
   list-style: none;
-  
-  margin: 0;
-  padding: 0;
+  margin-top: 23px;
+  margin-left: 13px;
 }
 
 .site-navigation li {
-  margin-right: 45px;
+  margin-right: 47px;
 }
 
 .user-navigation {
   display: flex;
   justify-content:space-around;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .site-navigation a,
@@ -174,8 +171,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 7px;
-  left: 5px;
+  top:10px;
+  left: 10px;
 
   background-image:url("../img/cart-icon.svg");
   background-repeat: no-repeat;
@@ -187,9 +184,9 @@ img {
 }
 
 /*Часть главной страницы со слайдером*/
+
 .grey-background-color {
   background-color: #eeeeee;
-  padding-top: 10px;
 }
 
 .slider {
@@ -199,64 +196,57 @@ img {
   list-style: none;
 
   background-color: #eeeeee;
-
+  
+  min-height:423.5px;
+  margin:0;
   padding: 0;
 }
 
 .how {
-  padding-top: 85px;
-  margin:0;
-
+  padding:0; 
+  margin: 0;
+  padding-top: 72px;
   font-size: 55px;
   line-height: 55px;
 }
- 
-.title-one {
-  padding-top: 67px;
-}
-
-.title-two {
-  padding-top: 84px;
-}
-
-.title-three {
-  padding-top: 67px;
-}
 
 .perfect-design{
-  width: 370px;
-  padding-top: 28px;
+  padding-top: 26px;
   margin:0;
 }
  
 .slider-button{
   width:240px;
-  margin-top: 42px;
+  margin-top: 39px;
 }
  
 .slide-one {
+  display: block;
   background-image:url("../img/slide-picture-one.png");
   background-repeat: no-repeat;
-  background-position: right;  
+  background-position: 431px 10px; 
+  height: 425px;
 }
 
 .slide-two {
-  display: none;
-
+  display: block;
+ /* display: none;*/
   background-image:url("../img/slide-picture-two.png");
   background-repeat: no-repeat;
-  background-position: right;
   
-  margin-top: 70px;
+  background-position: 497px -1px; 
+  height: 430px;
 }
 
 .slide-three {
-  display: none;
-
+  display: block;
+  /* display: none;*/
+ 
   background-image:url("../img/slide-picture-three.png");
   background-repeat: no-repeat;
-  background-position: right;
-  
+ 
+  background-position: 400px 10px; 
+  height: 413px;
   margin-top: 168px;
   margin-bottom: 82px;
 }
@@ -268,8 +258,8 @@ img {
   align-items: center;
   z-index: 3;
   position: absolute;
-  top: 245px;
-  left: 550px;
+  top: 285px;
+  left: 537px;
   list-style: none;
   
   width: 126px;
@@ -282,7 +272,9 @@ img {
     
   width: 18px;
   height: 18px;
-  border-radius: 9px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
 }
 
 .current-slider-ring {
@@ -292,13 +284,13 @@ img {
 .current-slider-ring::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 5px;
+  left: 5px;
 
   width: 8px;
   height: 8px;
   border: 2px solid #c9c9c9;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 /*Третья часть главной страницы, 
@@ -345,6 +337,8 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+ 
+  margin-bottom: 0px;
 }
 
 .catalog-content {
@@ -356,14 +350,17 @@ img {
 
 .catalog-slogan {
   width: 260px;
+  padding-top: 0;
 }
 
 .button-red {
   width:160px;
+  margin-top: 33px;
 }
 
 .button-green {
-  background-color: #00ca74;  
+  background-color: #00ca74;
+  margin-top: 33px;  
 }
 
 .button-green:hover,
@@ -377,6 +374,7 @@ img {
 
 .button-yellow {
   background-color: #efc84a;
+  margin-top: 33px;
 }
 
 .button-yellow:hover,
@@ -412,8 +410,8 @@ img {
   width:660px;
   height: 87px;
   padding: 0;
-  margin-top: 80px;
-  margin-bottom: 35px;
+  margin-top: 74px;
+  margin-bottom: 19.5px;
   
   font-size: 45px;
   line-height: 45px;
@@ -424,7 +422,7 @@ img {
 }
 
 .principles {
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 
   text-transform: none;
   text-align: left;
@@ -432,8 +430,8 @@ img {
 }
 
 .what {
-  margin-bottom: 15px;
-  
+  margin-bottom: 9px;
+  margin-left: 0px;
   width:650px;
 
   font-weight: 700;
@@ -443,13 +441,15 @@ img {
  
 .what-list {
   list-style: none;
+  padding-left: 36px;
+
 }
 
 .what-item {
   display: block;
   position: relative;
-  
-  margin-bottom: 20px;
+
+  margin-bottom: 23px;
   
   font-weight: 400;
   color: #283136;
@@ -459,8 +459,8 @@ img {
   content:"";
   display: block;
   position: absolute;
-  left: -35px;
-  top: 10px;
+  left: -36px;
+  top: 11px;
   
   background-color: #fb565a;
 
@@ -471,19 +471,20 @@ img {
 .right-side-fourth-part {
   display: flex;
   flex-direction: column;
+  position: relative;
   
   width: 360px;
 }
 
 .picture-nerds {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .year {
   width:330px;
   margin-bottom: 49px;
-  margin-right: 15px;
+  margin-left: 11px;
   
   font-size: 16px;
   line-height: 24px;
@@ -492,50 +493,65 @@ img {
   text-align: right;
 }
 
-.percentes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  width: 360px;
+.table {
+  position: absolute;
+  top:344px;
+  left:-11px;
 }
 
 .percentes-item {
-  display: block;
-  
-  margin-bottom: 40px;
+  position: relative;
+  padding: 10px 10px;
+  width: 400px;
 
   font-size: 45px;
   line-height: 30px;
   font-weight: 700;
+
   text-transform: none;
-  text-align: left;
 }
 
 .small {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 87px;
   font-size: 25px;
   font-weight: 700;
+  padding-top: 10px;
+}
+
+.column2 .small {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 93px;
+}
+
+.column3 .small {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 62px;
 }
 
 .percentes-mean {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-
-  width: 380px;
-    
   color:#283136;
 }
 
 .percentes-mean-item {
-  width: 110px;
-  height: 33px;
-  
+  padding: 14px 10px;
   line-height: 18px;
   text-transform: none;
-  text-align: left;
   color:#283136;  
+}
+
+.column2 {
+  padding-left: 16px;
+}
+
+.column3 {
+  padding-left: 10px;
 }
 
 /*пятая часть главной страницы, это часть с четырьмя логотипами*/
@@ -543,22 +559,45 @@ img {
 .fifth-part {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items:center;
   position: relative;
   list-style: none;
 
+  margin:0px;
+  padding-top: 46px;
+  padding-left: 31px;
+  padding-bottom: 37px;
+  
   border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;  
 }
 
 .logo-line {
   display: block;
   position: relative;
-  
-  box-sizing:content-box;
-  margin-top:62px;
-  margin-bottom: 50px;
+  box-sizing:border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo1 {
+  margin-top: 16px;
+  margin-right: 95px;
+}
+
+.logo2 {
+  padding-left: 2px;
+  margin-top: 2px;
+  margin-right: 103px;
+}
+
+.logo3 {
+  margin-right: 121px;
+}
+
+.logo4 {
+  margin-top: 8px;
 }
 
 .logo-line::before {
@@ -570,17 +609,26 @@ img {
   
   background-color:#eeeeee;
   
-  width: 3px;
+  width: 2px;
   height: 52px;
 }
 
 .logo-line:first-child::before {
-  display: none;
+  display: none;   
 }
 
-.logo-line:nth-child(2)::before,
-.logo-line:nth-child(4)::before {
+.logo-line:nth-child(2)::before {
   top: 17px;
+  left: -45px;
+}
+
+.logo-line:nth-child(3)::before {
+  left: -60px;
+}
+
+.logo-line:nth-child(4)::before {
+  top: 10px;
+  left: -65px;
 }
 
 .logo-line a {
@@ -609,6 +657,10 @@ img {
   margin-bottom: 0px;
 }
 
+.map-catalog {
+  margin-top: 43px;
+}
+
 /*Окно на карте*/
 
 .map-contacts {
@@ -616,7 +668,7 @@ img {
   flex-direction: column;
   position: absolute;
 
-  left: 140px;
+  left: 0px;
   top: 54px;
   z-index: 2;
   
@@ -624,16 +676,16 @@ img {
        
   width: 319px;
   height: 308px;
-  padding: 50px 50px; 
+  padding: 33px 50px; 
 }
 
 .studio-name {
   display: block;
   
-  height: 35px;
+  height: 30px;
   padding: 0;
   padding-bottom: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 
   font-size: 18px;
   line-height: 30px;
@@ -646,7 +698,7 @@ img {
   
   width: 205px;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   font-size: 16px;
   line-height: 18px;
@@ -673,7 +725,7 @@ img {
 
  .button-map{
   width: 219px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
     
 .marker {
@@ -751,238 +803,130 @@ img {
   color:#283136;  
 }
 
-/*надписи над правой частью страницы catalog,
-там, где у нас две колонки главных страниц сайтов*/
-
-.sorting {
-  display: flex;
-}
-
-.text-sorting {
-  display: block;
-
-  width:360px;
-  margin-left: 40px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.center-sorting {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  
-  width:320px;
-  padding: 0px;
-  padding-right: 50px;
-  margin-left: 40px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-right: 0px;
-}
-
-.sort a{
-  display: block;
-
-  padding: 0px;
-
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: left;
-  color:rgba(0, 0, 0, 0.3);  
-}
-
-.sort a:hover,
-.sort a:focus {
-  color:rgba(0, 0, 0, 0.6);
-}
-
-.sort a:active {
-  color: #000000;
-}
-
-.right-sorting {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-
-  width:40px;
-  padding: 0px;
-  margin-left: 0px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-right: 0px;
-}
-
-.arrow {
-  opacity: 0.2;
-}
-
-.arrow:hover,
-.arrow:focus {
-  opacity: 0.5;
-}
-
-.arrow:active {
-  opacity: 1.0;
-}
-
-.catalog-list-page-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  
-  margin: 0;
-  padding:0;
-}
-
 /* сложный фильтр (первый) на странице catalog*/
 .filter-item {
-  display: flex;
-  flex-direction: column;
-  
-  width: 260px;
-  height: 330px;
   padding: 0;
   margin: 0;
-}
 
-.name-filter-compl {
-  display:block;
-
-  width: 120px;
-  height: 20px;
-  margin-top: 56px;
-  
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.18px;
-  color:#000000;
+  border: none;
 }
 
 .range-filter {
-  display: block;
-
   width: 260px;
-  height: 250px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  padding-top: 53px;
+  padding-left: 12px;
+
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: uppercase;
+  text-align: center;
+  letter-spacing: 0.18px;
+  font-weight: 700;
 }
 
 .range-controls {
-  display: block;
   position: relative;
-  
-  background-color: #f1f1f1;
+  height: 80px;
+  margin-bottom: 13px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #eeeeee;
 
-  border-radius: 5px;
-  margin-top: 69px;
- 
-  width: 261px;
-  height: 81px; 
+  border-radius: 5px;  
 }
 
 .scale {
-  display: block;
-  position: absolute;
-  top:40px;
-  
-  background: #d7dcde;
-
   height: 2px;
-  width: 260px;  
+
+  background-color:#d7dcde;
 }
 
 .bar {
-  position: absolute;
+  width:70%;
+  height: 2px;
 
   background: #00ca74;
-  
-  width: 55%;
-  height: 2px;
-  margin-left: 10%; 
 }
 
 .toggle {
-  position: absolute;
-  top: 31px;
-  left: 0;
-  cursor: pointer;
-
-  background-color: #ababab;
-  box-shadow:inset 9 2px 1px 0 #cfcfcf;
-
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
+  margin: 0;
   border: 8px solid #ffffff;
+  background-color: #d7dcde;
   border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
 }
 
-.range-controls .toggle-min {
+.toggle-min {
+  position: absolute;
+  top: 29px;
   left: 18px;
 }
 
-.range-controls .toggle-max {
+.toggle-max {
+  position: absolute;
+  top: 29px;
   left: 160px;
 }
 
 .price-controls {
-  display: flex;
-  position:relative;
-
-  margin-top: 13px;
-
   font-size: 0;
 }
 
 .price-controls label {
-  display: flex;
-  position: relative;
-
+  display: inline-block;
   width: 50%;
-  padding-left: 15px;
 
   font-size: 16px;
-  line-height: 38px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 .price-controls input {
-  display: block;
-  position: absolute;
-  right: 0px;
-
-  background-color: #f1f1f1;
-
   width: 80px;
-  height:38px;
-  border: none;
-  border-radius: 5px;
+  height: 38px;
+  padding-left: 15px;
 
+ 
+  margin-left: 10px;
+
+  font-size: 16px;
   text-align: center;
   color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #eeeeee;
 }
 
 .max-price {
-  display: block;
+  text-align: right;
 }
 
-.min-price {
-  display: block;
-}
+
 /* Второй фильтр (сетки),
 то есть радиобатоны */
 
+.filter-radio {
+  margin-top: 54px;
+  margin-left: 0px;
+}
+
+.filter-radio legend {
+  padding-bottom: 10px; 
+}
+
 .radio {
-  padding-left: 1.2em;
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 6px;
 }
 
 .radio_input {
@@ -990,11 +934,13 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
 }
 
 .radio_box {
   position: absolute;
-  
+  left: 20px;
+  top: -2px;
   background-image: url("../img/radio-off.svg");
   opacity: 0.4;
 
@@ -1036,8 +982,22 @@ img {
   margin-bottom: 6px; 
 }
 
+/* стили для фильтра "Особенности"*/
+
+.filter-checked {
+  margin-top: 13px;
+  margin-left: 0px;
+}
+
+.filter-checked legend {
+  padding-left: 1px;
+  padding-bottom: 10px;
+}
+
 .check {
-  padding-left: 22px;
+  display: block;
+  padding-bottom: 5px;
+  margin-left: 25px;
 }
 
 .check_input {
@@ -1125,7 +1085,7 @@ img {
   background-color: #eeeeee;
   
   width: 260px;
-
+  margin-top: 19px;
   color:#000000;
 }
 
@@ -1141,18 +1101,123 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/*надписи "Сортировать" над правой частью страницы catalog,
+там, где у нас две колонки главных страниц сайтов*/
+
+.sorting {
+  display: flex;
+  padding-bottom: 0px;
+}
+
+.text-sorting {
+  display: block;
+
+  width:360px;
+  margin-left: 40px;
+  margin-top: 56px;
+  margin-bottom: 30px;
+  
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.center-sorting {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+  width:320px;
+  padding: 0px;
+  padding-right: 50px;
+  margin-left: 40px;
+  margin-top: 57px;
+  margin-bottom: 30px;
+  margin-right: 0px;
+}
+
+.center-sorting a {
+  display: block;
+
+  padding: 0px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color:rgba(0, 0, 0, 0.3);  
+}
+
+.center-sorting a:hover,
+.center-sorting a:focus {
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.center-sorting a:active {
+  color: #000000;
+}
+
+.center-sorting .sort-current a{
+  color: #000000;
+}
+
+.right-sorting {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  width:40px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-top: 54px;
+  margin-bottom: 30px;
+  margin-right: 0px;
+}
+
+.arrow {
+  color: #000000;
+  opacity: 0.2;
+}
+
+.arrow:hover, 
+.arrow:focus { 
+  opacity: 0.7;
+}
+
+.arrow:active {
+  opacity: 1.0;
+}
+
+.right-sorting .sort-current a{
+  opacity: 1.0;
+}
+
 /*секция с карточками каталога*/
+
+.catalog-list-page-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-top: 24px;
+  padding: 0px;
+}
+
 .catalog-item-page-catalog {
   display: flex;
   flex-direction: column;
   position:relative;
   
   width: 360px;
-  padding:0;
+  height: 615px;
   padding-top: 40px;
+  
   margin: 0;
   margin-left:40px;
   margin-bottom: 33px;
+  border-radius: 3px;
 }
 
 /*серая полоска над главной страницей продаваемых сайтов,
@@ -1170,7 +1235,7 @@ img {
   background-position: 0 0;
   opacity: 0.12;
 
-  width: 360px;
+  width: 420px;
   height: 40px;
 }
 
@@ -1183,7 +1248,6 @@ img {
   display: none;
   position:absolute;
   bottom: 0;
-
   background-color: #eeeeee;
  
   width: 360px;
@@ -1247,7 +1311,7 @@ img {
 .card-button {
   width: 200px;
 
-  text-transform: none; 
+  text-transform: uppercase;
 }
 
 /*стили для пагинации на странице каталога*/
@@ -1257,7 +1321,7 @@ img {
   list-style: none;
   
   padding: 0;
-  margin: 0;
+  margin-top: 30px;
   margin-left: 40px;
 }
 
@@ -1272,37 +1336,54 @@ img {
 
   width: 50px;
   height: 50px;
-  
+  border-radius: 3px;
+    
+  font-size: 14px;
   line-height: 50px;
   font-weight: 500;
   text-align: center;
 }
 
+.pagination-item a:hover {
+  background-color: #dfdfdf; 
+}
+
+.pagination-item a:focus {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.pagination-item a:active {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+  line-height: 44px;  
+  color: #000000;
+}
+
 .pagination-item-next a{
   margin-right: 0;
   width: 260px;
+  background-color: #eeeeee;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus,
-.pagination-item a:active {
-  background-color: #ffffff;
+.pagination-item-next a:hover,
+.pagination-item-next a:focus {
+  background-color: #dfdfdf;
 }
 
-.pagination-item-current a {
-  background-color: #ffffff;
-
-  border: 3px solid #eeeeee;
-  
-  line-height: 44px;
+.pagination-item-next a:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-current a {
   background-color: #ffffff;
-
-  border: 3px solid #eeeeee;
+  border: 3px solid #dbdbdb;
+  line-height: 44px;  
+  color: #000000;
 }
 
 /*стили для подвала*/
@@ -1328,7 +1409,7 @@ img {
   height: 218px;
   margin: 0;
   padding: 0;
-    
+  padding-bottom: 5px;
   text-align: center;
 }
 
@@ -1365,7 +1446,7 @@ img {
 .footer-slogan {
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
  
   font-size: 36px;
   line-height: 36px;
@@ -1378,8 +1459,8 @@ img {
 .footer-sales {
   padding: 0;
   margin: 0;
-
-  line-height: 22px;
+  
+  line-height: 24px;
   text-transform: none;
   text-align: left;
   color: #444444;
@@ -1388,7 +1469,7 @@ img {
 /*модальное окно*/
 
 .modal {
-  display: none;
+  /*display: none;*/
   z-index: 6;
   position: fixed;
   left: 50%;
@@ -1401,8 +1482,7 @@ img {
   height: 590px;
   padding: 73px 100px;
   margin-left: -480px;
-  
- /* color:#000000;*/
+
 }
 
 .modal-close {
@@ -1526,4 +1606,3 @@ img {
   width: 260px;
   margin-top: 45px;
 }
-

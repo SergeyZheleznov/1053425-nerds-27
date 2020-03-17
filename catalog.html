@@ -22,7 +22,7 @@
         <ul class="site-navigation">                    
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a class="shop_page" href="catalog.html">Магазин</a></li>
+          <li class="current-page"><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -40,8 +40,8 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
          
-            <fildset class="filter-item">
-              <legend class="name-filter-compl">Стоимость:</legend>  
+            <div class="filter-item">
+              <div class="name-filter-compl">Стоимость:</div>  
               <div class="range-filter">
                 <div class="range-controls"> 
                   <div class="scale"> <div class="bar"></div></div>
@@ -56,7 +56,7 @@
                     type="number" value="15000"></label>
                 </div>
               </div> 
-            </fildset>
+            </div>
          
             <fieldset class="filter-radio">
               <legend>Сетка:</legend>
@@ -112,23 +112,7 @@
                 <span class="check_box"></span>
                 Корзина
               </label> 
-               
-              <!--
-              Закомментированный текст ниже это подготовленный код
-              для работы с заблокированными кастомными кнопками.
-              Всё работает, есть соответствующий CSS код -->
-              <!--<label class="check option">
-                  <input class="check_input" type="checkbox" disabled>
-                  <span class="check_box"></span>
-                  Галерея
-              </label>  
-             
-                <label class="check option">
-                  <input class="check_input" type="checkbox" checked disabled>
-                  <span class="check_box"></span>
-                  Корзина
-              </label> 
-            -->
+        
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
           </form>
@@ -164,7 +148,7 @@
               <li class="catalog-item-page-catalog">
                 <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Главная страница сайта туристической фирмы">
                   <div class="card">
-                    <a class="a_card_title" href="#"><h3 class="card-title">Sedona</h3></a>
+                    <a  href="#"><h3 class="card-title">Sedona</h3></a>
                     <p class="card-information">Информационный сайт <br> для туристов</p>
                     <span class="card-button button">9 900 руб.</span>
                   </div>
@@ -172,7 +156,7 @@
               <li class="catalog-item-page-catalog">
                 <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Главная страница сайта фирмы фотофильтров для смартфона">
                 <div class="card">
-                  <a class="a_card_title" href="#"><h3 class="card-title">Pink app</h3></a>
+                  <a href="#"><h3 class="card-title">Pink app</h3></a>
                   <p class="card-information">Продуктовый лендинг приложения для iOS и Android</p>
                   <span class="card-button button">9 900 руб.</span>
                 </div>
@@ -180,7 +164,7 @@
               <li class="catalog-item-page-catalog">
                 <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Главная страница сайта Барбершоп Бородинский">
                 <div class="card">
-                  <a class="a_card_title" href="#"><h3 class="card-title">Barbershop</h3></a>
+                  <a href="#"><h3 class="card-title">Barbershop</h3></a>
                   <p class="card-information">Сайт салона красоты. <br>Для мужчин, да.</p>
                   <span class="card-button button">9 900 руб.</span>
                 </div>
@@ -188,7 +172,7 @@
               <li class="catalog-item-page-catalog">
                 <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Главная страница сайта магазина вязаных корзинок">
                 <div class="card">
-                  <a class="a_card_title" href="#"><h3 class="card-title">Mishka</h3></a>
+                  <a href="#"><h3 class="card-title">Mishka</h3></a>
                   <p class="card-information">Интернет-магазин<br>вязаных игрушек</p>
                   <span class="card-button button">9 900 руб.</span>
                 </div>
@@ -196,7 +180,7 @@
               <li class="catalog-item-page-catalog">
                 <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Главная страница сайта ВУЗа">
                 <div class="card">
-                  <a class="a_card_title" href="#"><h3 class="card-title">A plus</h3></a>
+                  <a href="#"><h3 class="card-title">A plus</h3></a>
                   <p class="card-information">Лендинг курсов повышения квалификации</p>
                   <span class="card-button button">9 900 руб.</span>
                 </div>
@@ -204,7 +188,7 @@
               <li class="catalog-item-page-catalog">
                 <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Главная страница сайта крафтового кваса">
                 <div class="card">
-                  <a class="a_card_title" href="#"><h3 class="card-title">Кваст</h3></a>
+                  <a href="#"><h3 class="card-title">Кваст</h3></a>
                   <p class="card-information">Промо-сайт производителя крафтового кваса</p>
                   <span class="card-button button">9 900 руб.</span>
                 </div>
@@ -212,7 +196,7 @@
             </ul>
         
             <ul class="pagination-list">
-              <li class="pagination-item pagination-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a class="pagination-current" href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
@@ -226,7 +210,7 @@
         <img src="img/map-marker4.jpg" width="1160" height="416" alt="карта">
         <div class="map-contacts">
           <h2 class="studio-name">nёrds design studio</h2>
-          <address class="studio-address">191186, Санкт-Петебург, ул. Б. Конюшенная д.19/8</address>
+          <address class="studio-address">191186, Санкт-Петебург, ул. Б. Конюшенная, д. 19/8</address>
           <p><a href="tel:+78122757575" class="studio-tel">тел.+7 (812) 275-75-75</a></p>
           <a class="button-map button" href="#">напишите нам</a>
         </div>

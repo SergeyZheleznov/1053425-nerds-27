@@ -41,6 +41,7 @@ body {
 
 .main-header {
   background-color: #eeeeee;
+  padding-top: 50px
 }
 
 .page-title {
@@ -79,7 +80,7 @@ img {
   font: inherit;
   font-size: 16px;
   line-height: 50px;
-  font-weight: 500px;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   color:#ffffff;
@@ -97,8 +98,11 @@ img {
   color:rgba(255, 255, 255, 0.3);  
 }
 
+/*Стили для логотипа, меню и корзины*/
+
 .main-navigation {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 1160px;
  }
@@ -164,23 +168,38 @@ img {
   position: relative;
 
   padding-left: 50px;
-  padding-right: 0px;  
+  padding-right: 0px; 
+  padding-top: 6px;
 }
 
 .card-link::before {
-  content: "";
-
+  content:"";
   position: absolute;
-  top:10px;
+  top:14px;
   left: 10px;
-
-  background-image:url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #dee9e4;
-  
   width: 15px;
   height: 15px;
+
+  background-image: url("../img/cart-icon.svg");
+
+}
+/*красная полоска в меню, которая появляется, когда мы находимся
+на странице каталога*/
+
+.current-page {
+  position: relative;
+}
+
+.current-page::after{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 33px;
+  background-color: #fb565a;
+
+  width: 63px;
+  height: 2px;
+  width: 100%;
 }
 
 /*Часть главной страницы со слайдером*/
@@ -230,7 +249,7 @@ img {
 
 .slide-two {
   display: block;
- /* display: none;*/
+  display: none;
   background-image:url("../img/slide-picture-two.png");
   background-repeat: no-repeat;
   
@@ -240,7 +259,7 @@ img {
 
 .slide-three {
   display: block;
-  /* display: none;*/
+  display: none;
  
   background-image:url("../img/slide-picture-three.png");
   background-repeat: no-repeat;
@@ -749,27 +768,6 @@ img {
   margin: 0;
 }
 
-/*полоска в меню, которая появляется, когда мы находимся
-на странице каталога*/
-
-.shop_page::after {
-  content:"";
-  display: none;
-  position: absolute;
-  top: 70px;
-
-  background-color: #fb565a;
-
-  width: 74px;
-  height: 2px;
-}
-
-.shop_page:active::after {
-  display: block;
-
-  background-color: #fb565a;
-}
-
 .filters {
   width: 261px;
   
@@ -816,14 +814,13 @@ img {
   margin-top: 49px;
 }
 
-.filter-item legend {
+.name-filter-compl {
   padding-top: 53px;
-  padding-left: 12px;
-
+  margin-left: 0px;
   font-size: 18px;
   line-height: 30px;
-  text-decoration: uppercase;
-  text-align: center;
+  text-transform: uppercase;
+  text-align: left;
   letter-spacing: 0.18px;
   font-weight: 700;
 }
@@ -893,8 +890,6 @@ img {
   width: 80px;
   height: 38px;
   padding-left: 15px;
-
- 
   margin-left: 10px;
 
   font-size: 16px;
@@ -1050,36 +1045,6 @@ img {
   opacity: 1.0;
 }
 
-/*Disabled*/
-/*Данное состояние пока не работает, поскольку 
-кнопок, которые заблокированы, я на макете пока не вижу, 
-но стили для таких кнопок проведены и работают
-Так же сделан соответствующий HTML-код
-когда инпут задизаблен, у нас прозрачность падает до 0.1
-*//*
-.check_input:disabled + .check_box {
-  background-image: url("../img/checkbox-off.svg");
-  opacity: 0.1;
-}
-
-.check_input:checked:disabled + .check_box {
-  background-image: url("../img/checkbox-on.svg");
-  opacity: 0.1;
-}
-
-
-/*когда инпут задизаблен, 
-текст меняет цвет на rgba(40,49,54,0.3),
-задача изменения цвета текста в зависимости от того, 
-задизаблен или нет мой инпут, у меня на 25.02.2020 не решена*/
-/*.check_input:disabled /* что здесь ставить - не понятно*/ /*{
-  rgba(40,49,54,0.3)
-}
-
-.check_input:checked:disabled /* что здесь ставить - не понятно*/ /*{
-  rgba(40,49,54,0.3)
-*/
-
 /*кнопка фильтра*/
 .filter-button {
   background-color: #eeeeee;
@@ -1096,7 +1061,7 @@ img {
 
 .filter-button:active {
   background-color: #d5d5d5;
-  box-shadow:inset 0px 3px 0px 0 px rgba(0, 0, 0, 0.3);
+  box-shadow:inset 0px 3px 0 0 rgba(0, 0, 0, 0.3);
 
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1255,27 +1220,11 @@ img {
   padding: 35px 50px 43px;
 }
 
-.catalog-item-page-catalog:hover .card{
+.catalog-item-page-catalog:hover .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;  
-}
-
-.a_card_title {
-  display: flex;
-  
-  width: 90x;
-  height: 14px;
-  margin-bottom:25px;
-}
-
-.card-title:hover{
-  color:#fb565a;
-}
-
-.cart-title:active{
-  color:rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
@@ -1283,12 +1232,21 @@ img {
   height: 13px;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.card-title:hover,
+.card-title:focus {
+  color:#fb565a;
+}
+
+.card-title:active {
+  color:rgba(0, 0, 0, 0.3); 
 }
 
 .card-information {
@@ -1379,9 +1337,26 @@ img {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.pagination-current a {
+.pagination-current {
+  position: relative;
+}
+
+.pagination-current::after {
+  content: "1";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 50px;
+  height: 50px;
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
+
+  font-size: 14px;
+  line-height: 50px;
+  font-weight: 500;
+  text-align: center;
   line-height: 44px;  
   color: #000000;
 }
@@ -1469,7 +1444,7 @@ img {
 /*модальное окно*/
 
 .modal {
-  /*display: none;*/
+  display: none;
   z-index: 6;
   position: fixed;
   left: 50%;
@@ -1480,9 +1455,10 @@ img {
   
   width: 960px;
   height: 590px;
-  padding: 73px 100px;
-  margin-left: -480px;
-
+  padding-top:66px; 
+  padding-left: 99px;
+  padding-right: 103px;
+  margin-left: -478px;
 }
 
 .modal-close {
@@ -1503,8 +1479,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 2px;
+  top: 8px;
+  left: 1px;
 
   background-color: red;
   opacity: 0.3;
@@ -1536,16 +1512,17 @@ img {
 }
 
 .modal h2 {
+  padding-left: 0px;
   margin: 0;
-  margin-bottom: 50px;
-
+  margin-bottom: 41px;
+  
   font-size: 45px;
   line-height: 45px;
 }
 
 .modal label {
   display: block;
-  
+  padding-left: 2px;
   margin-bottom: 8px;
 
   line-height: 18px;
@@ -1557,13 +1534,15 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-
+  padding: 0px;
   margin-bottom: 30px;
 }
 
 .letter input[type="text"]{
   width: 360px;
-  padding: 10px 15px;
+  padding: 13px 13px;
+  margin-top: 3px;
+  margin-left: 0px;
   border: 2px solid #d7dcde;
    
   line-height: 18px;
@@ -1581,10 +1560,14 @@ img {
   color: #444444;
 }
 
+.part3 {
+  margin-top: 35px;
+}
 .letter-text {
   width: 760px;
   height: 118px;
   padding: 10px 15px;
+  margin-bottom: -4px;
   border: 2px solid #d7dcde;
   
   line-height: 18px;

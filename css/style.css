@@ -1,5 +1,12 @@
-html { box-sizing: border-box; }
-*, *::before, *::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   padding: 0;
@@ -14,7 +21,9 @@ body {
   color: #000000;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden{
   position: absolute;
 
   width: 1px;
@@ -501,9 +510,9 @@ img {
 }
 
 .year {
-  width:330px;
+  width:340px;
   margin-bottom: 49px;
-  margin-left: 11px;
+  margin-left: 1px;
   
   font-size: 16px;
   line-height: 24px;
@@ -1166,6 +1175,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   
+  width: 800px;
   margin-top: 24px;
   padding: 0px;
 }
@@ -1176,7 +1186,7 @@ img {
   position:relative;
   
   width: 360px;
-  height: 615px;
+  min-height: 615px;
   padding-top: 40px;
   
   margin: 0;
@@ -1216,7 +1226,7 @@ img {
   background-color: #eeeeee;
  
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   padding: 35px 50px 43px;
 }
 
@@ -1229,7 +1239,7 @@ img {
 
 .card-title {
   width: 71x;
-  height: 13px;
+  min-height: 13px;
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
@@ -1253,7 +1263,7 @@ img {
   display: block;
   
   min-width: 200px;
-  height: 34px;
+  min-height: 34px;
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
@@ -1279,8 +1289,36 @@ img {
   list-style: none;
   
   padding: 0;
-  margin-top: 30px;
+  margin-top: 27px;
   margin-left: 40px;
+}
+
+.pagination-current a {
+  display:block;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 45px;  
+  color: #000000;
+}
+
+.pagination-current a:hover,
+.pagination-current a:focus {
+  background-color: #dfdfdf;
+  border: none;
+  line-height: 50px;
+}
+
+.pagination-current a:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item {
@@ -1302,20 +1340,15 @@ img {
   text-align: center;
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus  {
   background-color: #dfdfdf; 
 }
 
-.pagination-item a:focus {
-  background-color: #d5d5d5;
-  color: rgba(0, 0, 0, 0.3)
-}
-
 .pagination-item a:active {
-  background-color: #ffffff;
-  border: 3px solid #dbdbdb;
-  line-height: 44px;  
-  color: #000000;
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-next a{
@@ -1335,30 +1368,6 @@ img {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
-.pagination-current {
-  position: relative;
-}
-
-.pagination-current::after {
-  content: "1";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-
-  width: 50px;
-  height: 50px;
-  background-color: #ffffff;
-  border: 3px solid #dbdbdb;
-
-  font-size: 14px;
-  line-height: 50px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 44px;  
-  color: #000000;
 }
 
 /*стили для подвала*/

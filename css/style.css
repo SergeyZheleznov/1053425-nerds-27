@@ -1300,6 +1300,7 @@ img {
   margin-right: 11px;
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
+  border-radius: 3px;
 
   font-size: 14px;
   font-weight: 500;

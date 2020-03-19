@@ -50,7 +50,7 @@ input[type="checkbox"].visually-hidden{
 
 .main-header {
   background-color: #eeeeee;
-  padding-top: 50px
+  padding-top: 49px
 }
 
 .page-title {
@@ -111,6 +111,7 @@ img {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   justify-content: space-between;
   width: 1160px;
@@ -130,15 +131,21 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-content:space-between;
+  flex-wrap: wrap;
+  justify-content:flex-start;
   align-items: center;
   list-style: none;
   margin-top: 23px;
-  margin-left: 13px;
+  margin-left: 67px;
+  padding:0px;
+  padding-right: 0px;
+  width: 500px;
 }
 
 .site-navigation li {
-  margin-right: 47px;
+  margin-right: 46px;
+  max-width: 150px;
+  padding-top: 2px;
 }
 
 .user-navigation {
@@ -147,6 +154,7 @@ img {
   align-items: center;
   list-style: none;
   margin: 0;
+  
 }
 
 .site-navigation a,
@@ -178,13 +186,13 @@ img {
 
   padding-left: 50px;
   padding-right: 0px; 
-  padding-top: 6px;
+  padding-top: 8px;
 }
 
 .card-link::before {
   content:"";
   position: absolute;
-  top:14px;
+  top:16px;
   left: 10px;
   width: 15px;
   height: 15px;
@@ -335,16 +343,18 @@ img {
 
 .catalog-list {
   display:flex;
+  flex-wrap: wrap;
   justify-content:flex-start;
 
+  width: 1200px;
   padding: 0;
   margin: 0;
   margin-top: 80px;
+  outline: 1px solid #e74246;
 }
 
 .catalog-item {
   display: block;
-  flex-wrap: wrap;
   list-style: none;
   
   background-color: #ffffff;
@@ -595,7 +605,8 @@ img {
   margin:0px;
   padding-top: 46px;
   padding-left: 31px;
-  padding-bottom: 37px;
+  padding-bottom: 39px;
+  margin-bottom: 80px;
   
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;  
@@ -610,14 +621,14 @@ img {
 }
 
 .logo1 {
-  margin-top: 16px;
+  margin-top: 10px;
   margin-right: 95px;
 }
 
 .logo2 {
   padding-left: 2px;
-  margin-top: 2px;
-  margin-right: 103px;
+  margin-top: 0px;
+  margin-right: 104px;
 }
 
 .logo3 {
@@ -625,7 +636,7 @@ img {
 }
 
 .logo4 {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .logo-line::before {
@@ -675,18 +686,20 @@ img {
 /*шестая часть главной страницы, с картой*/
 
 .map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+  display: block;
+  background: #ffffff url("../img/map-mark4.jpg") no-repeat center top;
+ 
+  min-height: 416px;
 
-  width: 1160px;
-  margin: 80px auto;
-  margin-bottom: 0px;
 }
 
-.map-catalog {
-  margin-top: 43px;
+.container-map {
+  position:relative;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Окно на карте*/
@@ -695,10 +708,9 @@ img {
   display: flex;
   flex-direction: column;
   position: absolute;
-
-  left: 0px;
+  left: 20px;
   top: 54px;
-  z-index: 2;
+  z-index: 5;
   
   background-color: #ffffff; 
        
@@ -738,11 +750,11 @@ img {
 }
 
 .studio-tel {
-  display: inline;
+  display: inline-block;
   vertical-align: top;
 
   padding: 0;
-  padding-left: 5px;
+  padding-left: 0px;
 
   font-size: 16px;
   line-height: 18px;
@@ -755,18 +767,6 @@ img {
   width: 219px;
   margin-top: 15px;
 }
-    
-.marker {
-  position: absolute;
-  left:820px;
-  top:89px;
-  z-index: 2;
-
-  background-color: transparent;
-
-  width: 231px;
-  height: 190px;
-}
 
 /*рамки вокруг фильтров и карточек каталога
 и стиль названий рамок фильтров*/
@@ -775,6 +775,7 @@ img {
   
   padding:0;
   margin: 0;
+  margin-bottom: 44px;
 }
 
 .filters {
@@ -889,6 +890,8 @@ img {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
+
   width: 50%;
 
   font-size: 16px;
@@ -1394,7 +1397,7 @@ img {
   height: 218px;
   margin: 0;
   padding: 0;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   text-align: center;
 }
 
